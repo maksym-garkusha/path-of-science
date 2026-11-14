@@ -9,7 +9,7 @@
  */
 const COLS = ["sentAt", "id", "mode", "name", "channel", "contact", "uni", "year", "event", "role", "org", "position", "message", "page"];
 const HEAD = ["Час", "Номер", "Тип", "Ім’я", "Канал", "Контакт", "Університет", "Курс", "Цікавить", "Роль", "Організація", "Посада", "Повідомлення", "Сторінка", "Статус"];
-const MODES = { event: "Подія", team: "Команда", partner: "Партнерство" };
+const MODES = { event: "Подія", partner: "Співпраця" };
 
 function doPost(e) {
   try {
@@ -34,7 +34,7 @@ function notify(d) {
   const token = p.getProperty("TG_TOKEN"), chat = p.getProperty("TG_CHAT");
   if (!token || !chat) return;
   const rows = [["Тип", MODES[d.mode]], ["Ім’я", d.name], [d.channel, d.contact], ["Університет", d.uni], ["Курс", d.year],
-    ["Цікавить", d.event], ["Роль", d.role], ["Організація", d.org], ["Посада", d.position], ["Повідомлення", d.message]];
+    ["Цікавить", d.event], ["Організація", d.org], ["Посада", d.position], ["Повідомлення", d.message]];
   const text = "Нова заявка " + d.id + "\n\n" + rows.filter(r => r[1]).map(r => r[0] + ": " + r[1]).join("\n");
   UrlFetchApp.fetch("https://api.telegram.org/bot" + token + "/sendMessage", {
     method: "post", muteHttpExceptions: true,

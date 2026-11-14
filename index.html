@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Path of Science — наукова спільнота молоді: конференції, лекції, зустрічі з послами</title>
-<meta name="description" content="Path of Science — молодіжна наукова спільнота ГО «Ініціативна група «Вітер змін»». З 2021 року проводимо міжнародні конференції, відкриті лекції та зустрічі студентів із послами в Києві.">
+<title>Path of Science — наукова спільнота студентів і молодих дослідників</title>
+<meta name="description" content="Path of Science — молодіжна наукова спільнота ГО «Ініціативна група «Вітер змін»». З 2021 року проводимо міжнародні наукові конференції, видаємо збірники тез, організовуємо відкриті лекції та зустрічі з дипломатами.">
 <link rel="canonical" href="https://cobra283620384720174936.github.io/Path/">
 <meta name="theme-color" content="#0F1E45">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Path of Science">
-<meta property="og:title" content="Path of Science — студенти, які ставлять запитання послам">
-<meta property="og:description" content="Міжнародні конференції, відкриті лекції та зустрічі з дипломатами для студентів. Подати заявку можна за дві хвилини.">
+<meta property="og:title" content="Path of Science — наукова спільнота студентів і молодих дослідників">
+<meta property="og:description" content="Міжнародні наукові конференції, збірники тез, відкриті лекції та зустрічі з дипломатами. Участь безкоштовна.">
 <meta property="og:url" content="https://cobra283620384720174936.github.io/Path/">
 <meta property="og:image" content="https://cobra283620384720174936.github.io/Path/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"NGO","name":"Path of Science","alternateName":"ГО «Ініціативна група «Вітер змін»»","url":"https://cobra283620384720174936.github.io/Path/","description":"Молодіжна наукова спільнота: міжнародні конференції, відкриті лекції та зустрічі студентів із дипломатами.","address":{"@type":"PostalAddress","addressLocality":"Київ","addressCountry":"UA"},"sameAs":["https://www.instagram.com/path_of_science/","https://linktr.ee/science_woc"]}
+{"@context":"https://schema.org","@type":"NGO","name":"Path of Science","alternateName":"ГО «Ініціативна група «Вітер змін»»","url":"https://cobra283620384720174936.github.io/Path/","description":"Наукова спільнота студентів і молодих дослідників: міжнародні конференції, збірники тез, відкриті лекції.","address":{"@type":"PostalAddress","addressLocality":"Київ","addressCountry":"UA"},"sameAs":["https://www.instagram.com/path_of_science/","https://linktr.ee/science_woc"]}
 </script>
 <style>
 :root{
@@ -77,7 +77,7 @@ p{text-wrap:pretty}
 .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
   background:repeating-radial-gradient(circle at 78% 46%,transparent 0 22px,rgba(200,163,83,.07) 22px 23px)}
-.hero-in>*,.emb>*,.about>*,.apply-grid>*{min-width:0}
+.hero-in>*,.about>*,.apply-grid>*{min-width:0}
 .hero-in{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:76px 28px 88px}
 .hero h1{font-size:clamp(38px,5.6vw,72px)}
 .hero h1 em{font-style:normal;color:var(--foil2)}
@@ -111,23 +111,6 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
 .sec-head{max-width:760px;margin-bottom:44px}
 .sec-head p{color:var(--muted);font-size:18px;margin-top:16px}
 .sheet{background:var(--sheet);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-
-/* посольські лекції */
-.emb{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
-.emb-how{list-style:none;counter-reset:n;display:grid;gap:18px;margin-top:30px}
-.emb-how li{counter-increment:n;display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start}
-.emb-how li::before{content:counter(n);font-family:var(--fd);font-weight:800;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--foil2);font-size:16px}
-.emb-how b{display:block;font-weight:600}
-.emb-how span{color:var(--muted);font-size:15.5px}
-.visa{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px}
-.visa-head{display:flex;justify-content:space-between;gap:10px;font-family:var(--fm);font-size:12px;letter-spacing:.06em;color:var(--muted);margin-bottom:16px}
-.visa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.slot{min-height:132px;border-radius:12px;background:var(--sheet);border:1px dashed #B5BED3;display:grid;place-content:center;text-align:center;padding:12px;font-size:13.5px;color:var(--muted)}
-.slot.done{border-style:solid;border-color:var(--line)}
-.slot time{font-family:var(--fm);font-size:12px;letter-spacing:.06em;display:block;color:var(--ink);margin-bottom:4px}
-.emb-note{margin-top:18px;padding:18px 20px;border-left:4px solid var(--foil);background:var(--sheet);border-radius:0 12px 12px 0;font-size:15.5px}
-.emb-note b{font-weight:600}
-.emb-act{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 
 /* події */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
@@ -172,12 +155,24 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
 .person i{font-style:normal;flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--foil2);font-family:var(--fd);font-weight:800}
 .person span{display:block;font-size:14.5px;color:var(--muted)}
 
+/* партнери */
+.pgroups{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.pgroup h3{font-family:var(--fm);font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--muted);padding-bottom:12px;border-bottom:2px solid var(--navy);margin-bottom:6px}
+.pgroup ul{list-style:none}
+.pgroup li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.pgroup .mono{font-style:normal;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-family:var(--fd);font-weight:800;font-size:14px;color:var(--navy);background:var(--paper);border:1.5px solid var(--line);letter-spacing:-.02em}
+.pgroup li:nth-child(3n+1) .mono{color:#24388F;background:#E3E8F8;border-color:#C9D2F0}
+.pgroup li:nth-child(3n+2) .mono{color:#6E5416;background:#F3EAD3;border-color:#E6D6AA}
+.pgroup li:nth-child(3n) .mono{color:#96271D;background:#F6E3E1;border-color:#EBC8C4}
+.pgroup b{display:block;font-weight:600;font-size:16.5px;line-height:1.3}
+.pgroup span{display:block;font-size:14.5px;color:var(--muted);margin-top:2px}
+
 /* заявка */
 .apply{background:var(--navy);color:#fff}
 .apply .sec-head p{color:#C9D2EA}
 .apply-grid{display:grid;grid-template-columns:1fr 360px;gap:44px;align-items:start}
 .form{background:var(--sheet);color:var(--ink);border-radius:18px;padding:30px}
-.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:26px}
+.modes{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:26px}
 .modes label{position:relative;cursor:pointer}
 .modes input{position:absolute;opacity:0}
 .modes span{display:block;padding:14px 12px;border-radius:12px;border:2px solid var(--line);font-weight:600;font-size:15.5px;line-height:1.3;height:100%}
@@ -234,11 +229,12 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
 .mobile-cta{display:none}
 
 @media(max-width:1000px){
-  .hero-in,.emb,.about,.apply-grid{grid-template-columns:1fr}
+  .hero-in,.about,.apply-grid{grid-template-columns:1fr}
   .hero-in{padding:52px 28px 64px;gap:44px}
   .pass{max-width:480px;transform:rotate(0)}
   .formats{grid-template-columns:1fr 1fr}
   .team{grid-template-columns:1fr 1fr}
+  .pgroups{grid-template-columns:1fr 1fr}
   .nav{position:fixed;inset:68px 0 auto 0;background:var(--navy);flex-direction:column;padding:12px 20px 22px;border-bottom:1px solid rgba(255,255,255,.14);display:none}
   .menu-open .nav{display:flex}
   .nav a{padding:13px 10px;font-size:17px}
@@ -250,10 +246,9 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
   .wrap{padding:0 18px}.hero-in{padding:40px 18px 52px}
   .sec{padding:64px 0}
   .hero-facts{gap:22px}
-  .formats,.team,.foot-grid,.row{grid-template-columns:1fr}
+  .formats,.team,.foot-grid,.row,.pgroups{grid-template-columns:1fr}
   .row{gap:0}
   .modes{grid-template-columns:1fr}
-  .visa-grid{grid-template-columns:1fr 1fr}
   .ev{grid-template-columns:1fr auto;gap:4px 12px}
   .ev time{grid-column:1}.ev .kind{grid-column:2;grid-row:1;justify-self:end}
   .ev .body{grid-column:1/-1}
@@ -282,10 +277,10 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
       Path of Science
     </a>
     <nav class="nav" id="nav" aria-label="Головна навігація">
-      <a href="#embassy">Посольські лекції</a>
-      <a href="#events">Події</a>
       <a href="#formats">Що ми робимо</a>
+      <a href="#events">Події</a>
       <a href="#about">Про нас</a>
+      <a href="#partners">Партнери</a>
       <a href="#faq">Питання</a>
     </nav>
     <a class="btn btn-foil btn-sm" href="#apply">Подати заявку</a>
@@ -298,49 +293,33 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
 <section class="hero on-navy" id="top">
   <div class="wrap hero-in">
     <div>
-      <h1>Студенти, які ставлять запитання <em>послам</em></h1>
-      <p class="lead">Path of Science — молодіжна наукова спільнота в Києві. Проводимо міжнародні конференції, відкриті лекції та зустрічі з дипломатами. Участь у подіях безкоштовна.</p>
+      <h1>Студентська наука, яка виходить за стіни аудиторії</h1>
+      <p class="lead">Path of Science — наукова спільнота студентів і молодих дослідників. З 2021 року проводимо міжнародні наукові конференції, видаємо збірники тез, організовуємо відкриті лекції та зустрічі з дипломатами. Участь у подіях безкоштовна.</p>
       <div class="hero-act">
         <a class="btn btn-foil" href="#apply">Подати заявку</a>
-        <a class="btn btn-line" href="#events">Подивитися події</a>
+        <a class="btn btn-line" href="#formats">Що ми робимо</a>
       </div>
       <div class="hero-facts" id="facts"></div>
     </div>
-    <div class="pass" aria-label="Останні події спільноти">
-      <div class="pass-head"><span>ВІЗИ / VISAS</span><span id="passNo"></span></div>
+    <div class="pass" aria-label="Останні наукові події спільноти">
+      <div class="pass-head"><span>ЗБІРНИК / PROCEEDINGS</span><span id="passNo"></span></div>
       <div class="pass-grid" id="passStamps"></div>
-      <div class="mrz" aria-hidden="true">P&lt;UKR&lt;PATH&lt;OF&lt;SCIENCE&lt;&lt;KYIV&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div>
+      <div class="mrz" aria-hidden="true">PATH OF SCIENCE · KYIV · <span id="span"></span> · ISBN · TEZY · CONF</div>
     </div>
   </div>
 </section>
 
-<section class="sec sheet" id="embassy">
-  <div class="wrap emb">
-    <div>
-      <h2>Посольські лекції: раз на два місяці в гості до посла</h2>
-      <p style="color:var(--muted);font-size:18px;margin-top:16px">Ми приводимо групу студентів до посольства, де посол читає лекцію і відповідає на запитання. Без протокольних промов: жива розмова про дипломатію, свою країну та кар’єру.</p>
-      <ol class="emb-how">
-        <li><div><b>Залишаєш заявку</b><span>Вказуєш, як із тобою зв’язатися. Це дві хвилини.</span></div></li>
-        <li><div><b>Отримуєш запрошення</b><span>Коли узгодимо дату з посольством, напишемо тим, хто в списку. Місць мало, тож діє відбір.</span></div></li>
-        <li><div><b>Готуєш запитання</b><span>Перед зустріччю надсилаємо коротку довідку про країну та спікера.</span></div></li>
-        <li><div><b>Приходиш із паспортом</b><span>Посольства перевіряють документи на вході, списки подаємо заздалегідь.</span></div></li>
-      </ol>
-      <div class="emb-act">
-        <a class="btn btn-navy" href="#apply" data-mode="event" data-event="Посольська лекція (найближча)">Хочу на наступну лекцію</a>
-        <a class="btn btn-out" href="#apply" data-mode="partner">Запросити нас до посольства</a>
-      </div>
+<section class="sec sheet" id="formats">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Що ми робимо</h2>
+      <p>У центрі — наука: дослідження, тези, виступи й публікації. Можна прийти слухачем на одну лекцію, а можна вирости до модератора секції на міжнародній конференції.</p>
     </div>
-    <div>
-      <div class="visa">
-        <div class="visa-head"><span>СЕЗОН 2026/27</span><span>6 ЗУСТРІЧЕЙ</span></div>
-        <div class="visa-grid" id="visa"></div>
-      </div>
-      <p class="emb-note" lang="en"><b>For embassies.</b> We bring 20–30 motivated Ukrainian students for a one-hour talk and Q&amp;A with the Ambassador. We handle selection, guest lists and coverage. <a href="#apply" data-mode="partner">Leave a request</a> and we will get back within two working days.</p>
-    </div>
+    <div class="formats" id="fmtGrid"></div>
   </div>
 </section>
 
-<section class="sec" id="events">
+<section class="sec sheet" id="events">
   <div class="wrap">
     <div class="sec-head">
       <h2>Події, які ми вже провели</h2>
@@ -352,16 +331,6 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
   </div>
 </section>
 
-<section class="sec sheet" id="formats">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Що ми робимо</h2>
-      <p>Шість форматів. Можна прийти слухачем на одну лекцію, а можна вирости до модератора секції на міжнародній конференції.</p>
-    </div>
-    <div class="formats" id="fmtGrid"></div>
-  </div>
-</section>
-
 <section class="sec" id="about">
   <div class="wrap">
     <div class="about">
@@ -369,17 +338,22 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
         <h2>Хто ми</h2>
         <p class="big" style="margin-top:22px">Path of Science — проєкт громадської організації «Ініціативна група «Вітер змін»» (Wind of Changes). Нас об’єднав історичний факультет КНУ імені Тараса Шевченка, а сьогодні до подій долучаються студенти з різних університетів і міст.</p>
         <p style="color:var(--muted)">Ми вважаємо, що наука не має лишатися в аудиторії. Тому зводимо студентів із тими, хто ухвалює рішення: дипломатами, аналітиками, державними службовцями, дослідниками з-за кордону. Найдовша наша традиція — щорічна міжнародна конференція пам’яті Юрія Кнорозова, українського вченого, який дешифрував писемність мая.</p>
-        <p><a class="btn btn-navy" href="#apply" data-mode="team" style="margin-top:14px">Долучитися до команди</a></p>
       </div>
       <ol class="road" id="road"></ol>
     </div>
     <div id="teamBox" hidden>
       <div class="partners"><h3>Команда</h3><div class="team" id="team"></div></div>
     </div>
-    <div class="partners">
-      <h3>З ким ми працювали</h3>
-      <ul id="partners"></ul>
+  </div>
+</section>
+
+<section class="sec sheet" id="partners">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>З ким ми працювали</h2>
+      <p>Університети, аналітичні центри та громадські організації, з якими ми проводили конференції, лекції та освітні програми.</p>
     </div>
+    <div class="pgroups" id="partnerGroups"></div>
   </div>
 </section>
 
@@ -387,16 +361,15 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
   <div class="wrap">
     <div class="sec-head">
       <h2>Подати заявку</h2>
-      <p>Обери, що тебе цікавить. Відповідаємо протягом двох робочих днів у той месенджер, який вкажеш.</p>
+      <p>Залиш контакт, і ми напишемо, коли відкриється реєстрація на подію, яка тебе цікавить. Якщо хочеш зробити щось разом із нами, обери «Співпраця».</p>
     </div>
     <div class="apply-grid">
       <div class="form" id="formBox">
         <form id="form" novalidate>
           <fieldset class="modes" style="border:0">
             <legend class="vh">Тип заявки</legend>
-            <label><input type="radio" name="mode" value="event" checked><span>Хочу на подію<small>лекція, конференція, курс</small></span></label>
-            <label><input type="radio" name="mode" value="team"><span>Хочу в команду<small>організовувати події</small></span></label>
-            <label><input type="radio" name="mode" value="partner"><span>Партнерство<small>посольство, організація, спікер</small></span></label>
+            <label><input type="radio" name="mode" value="event" checked><span>Хочу на подію<small>конференція, лекція, курс</small></span></label>
+            <label><input type="radio" name="mode" value="partner"><span>Співпраця<small>організація, спікер або ідея спільного проєкту</small></span></label>
           </fieldset>
 
           <div class="row">
@@ -410,7 +383,7 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
             </div>
           </div>
 
-          <div data-for="event team">
+          <div data-for="event">
             <div class="row">
               <div class="f"><label for="fUni">Університет і спеціальність</label><input id="fUni" name="uni" placeholder="КНУ, міжнародні відносини"></div>
               <div class="f"><label for="fYear">Курс</label><select id="fYear" name="year"><option value="">Обери</option><option>1 курс</option><option>2 курс</option><option>3 курс</option><option>4 курс</option><option>Магістратура</option><option>Аспірантура</option><option>Школяр / ліцеїст</option><option>Уже закінчив(-ла)</option></select></div>
@@ -421,13 +394,10 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
             <div class="f"><label for="fEvent">Що цікавить</label><select id="fEvent" name="event"></select></div>
           </div>
 
-          <div data-for="team">
-            <div class="f"><label for="fRole">Чим хочеш займатися</label><select id="fRole" name="role"><option>Організація подій</option><option>Комунікації та соцмережі</option><option>Робота з партнерами й посольствами</option><option>Дизайн, фото, відео</option><option>Наукова редактура та збірники</option><option>Ще не знаю, порадьте</option></select></div>
-          </div>
 
           <div data-for="partner">
             <div class="row">
-              <div class="f"><label for="fOrg">Організація</label><input id="fOrg" name="org" placeholder="Посольство, ГО, університет"></div>
+              <div class="f"><label for="fOrg">Організація <span class="opt">(необов’язково)</span></label><input id="fOrg" name="org" placeholder="Університет, ГО, посольство"></div>
               <div class="f"><label for="fPos">Посада <span class="opt">(необов’язково)</span></label><input id="fPos" name="position"></div>
             </div>
           </div>
@@ -435,7 +405,7 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
           <div class="f"><label for="fMsg"><span id="msgLabel">Кілька слів про себе</span> <span class="opt">(необов’язково)</span></label><textarea id="fMsg" name="message" maxlength="1500"></textarea><div class="hint" id="msgHint">Що вивчаєш, що цікавить, про що хотів би запитати посла.</div></div>
 
           <label class="hp" aria-hidden="true">Не заповнюй це поле<input name="website" tabindex="-1" autocomplete="off"></label>
-          <label class="agree"><input type="checkbox" name="agree" id="fAgree" required><span>Погоджуюся, що команда Path of Science використає ці дані, щоб відповісти на заявку. Ми не передаємо їх третім особам, окрім списку гостей для посольства, якщо ти йдеш на лекцію.</span></label>
+          <label class="agree"><input type="checkbox" name="agree" id="fAgree" required><span>Погоджуюся, що команда Path of Science використає ці дані, щоб відповісти на заявку. Ми не передаємо їх третім особам, окрім списку гостей для організаторів, якщо тебе відібрано на подію.</span></label>
           <div class="f" id="agreeErr" style="margin-top:-12px"><div class="err">Без згоди ми не маємо права зберегти заявку.</div></div>
 
           <div class="form-foot">
@@ -450,7 +420,7 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
       <aside class="side">
         <div class="side-card">
           <h3>Що буде далі</h3>
-          <ol><li>Заявка потрапляє до координатора.</li><li>Протягом двох робочих днів ми пишемо тобі.</li><li>Додаємо в список на подію або запрошуємо на знайомство з командою.</li></ol>
+          <ol><li>Заявка потрапляє до координатора.</li><li>Ми пишемо тобі, коли відкривається реєстрація на подію, що тебе цікавить.</li><li>На події з обмеженою кількістю місць учасників відбираємо, і про результат повідомляємо.</li></ol>
         </div>
         <div class="side-card">
           <h3>Простіше написати?</h3>
@@ -475,18 +445,18 @@ a.stamp:hover{transform:rotate(0) scale(1.03)}
     <div class="foot-grid">
       <div>
         <a class="logo" href="#top" style="color:#fff"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#C8A353" stroke-width="3"/><circle cx="32" cy="32" r="17" fill="none" stroke="#C8A353" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="32" cy="6" r="5" fill="#C8A353"/></svg>Path of Science</a>
-        <p style="margin-top:14px;max-width:360px;font-size:15.5px">Молодіжна наукова спільнота. Проєкт ГО «Ініціативна група «Вітер змін»». Київ, Україна.</p>
+        <p style="margin-top:14px;max-width:360px;font-size:15.5px">Наукова спільнота студентів і молодих дослідників. Проєкт ГО «Ініціативна група «Вітер змін»». Київ, Україна.</p>
       </div>
       <div>
         <h3>На сайті</h3>
-        <ul><li><a href="#embassy">Посольські лекції</a></li><li><a href="#events">Події</a></li><li><a href="#formats">Що ми робимо</a></li><li><a href="#about">Про нас</a></li><li><a href="#apply">Подати заявку</a></li></ul>
+        <ul><li><a href="#formats">Що ми робимо</a></li><li><a href="#events">Події</a></li><li><a href="#about">Про нас</a></li><li><a href="#partners">Партнери</a></li><li><a href="#apply">Подати заявку</a></li></ul>
       </div>
       <div>
         <h3>Контакти</h3>
         <ul><li><a href="https://www.instagram.com/path_of_science/" target="_blank" rel="noopener">Instagram: @path_of_science</a></li><li><a href="https://linktr.ee/science_woc" target="_blank" rel="noopener">Linktree з реєстраціями</a></li><li><a href="https://ig.me/m/path_of_science" target="_blank" rel="noopener">Написати в Direct</a></li></ul>
       </div>
     </div>
-    <div class="foot-bottom"><span>© <span id="yr"></span> Path of Science</span><span>Наука, дипломатія, публічна політика</span></div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Path of Science</span><span>Дослідження, конференції, публікації</span></div>
   </div>
 </footer>
 
@@ -505,19 +475,13 @@ const DATA = {
      в запасному режимі: готує текст заявки і відкриває Direct в Instagram. */
   formEndpoint: "",
 
-  /* Посольські лекції. done:true + назва = штамп стоїть. Решта — план. */
-  embassy: [
-    { when: "Листопад 2026", date: "03.11.2026", done: true, country: "Австрія", who: "Посол Роберт Мюллер", post: "reel/DfRw-xyt7_j" },
-    { when: "Січень 2027" }, { when: "Березень 2027" }, { when: "Травень 2027" }, { when: "Липень 2027" }, { when: "Вересень 2027" }
-  ],
-
   /* Події. Нову подію додавай зверху. stamp — короткий підпис для штампа в шапці (показуються 4 найсвіжіші з цим полем).
      kind: conf | dip | lec | course. date у форматі РРРР-ММ-ДД (для сортування), show — як показати. */
   events: [
-    { date:"2026-11-03", show:"3 листопада 2026", kind:"dip", stamp:"Посольство Австрії", title:"Зустріч із Послом Австрії в Україні Робертом Мюллером", text:"Говорили про українсько-австрійські відносини, дипломатію, безпеку та про те, як молоді будувати кар’єру в дипломатії.", post:"reel/DfRw-xyt7_j" },
+    { date:"2026-11-03", show:"3 листопада 2026", kind:"dip", title:"Зустріч із Послом Австрії в Україні Робертом Мюллером", text:"Говорили про українсько-австрійські відносини, дипломатію, безпеку та про те, як молоді будувати кар’єру в дипломатії.", post:"reel/DfRw-xyt7_j" },
     { date:"2026-07-15", show:"15 липня 2026", kind:"lec", title:"Вебінар «Міжкультурні компетенції: кому й навіщо вони потрібні»", text:"Спікерка — Вікторія Спащенко, тренерка з міжкультурної взаємодії. Онлайн, Zoom.", post:"p/DaYkf-NstDl" },
     { date:"2026-05-13", show:"13 травня 2026", kind:"lec", stamp:"Чи ефективна ООН?", title:"Панельна дискусія «Чи ефективна ООН сьогодні?»", text:"Разом з UDP у Червоному корпусі КНУ: історія, сучасний стан і перспективи ООН.", post:"p/DYSYpFfswG3" },
-    { date:"2026-04-18", show:"18 квітня 2026", kind:"conf", title:"ІІІ Міжнародна наукова конференція «Україна та США: досвід і перспективи співпраці»", text:"Онлайн, з українськими та закордонними дослідниками.", post:"p/DVwWzRijN6x" },
+    { date:"2026-04-18", show:"18 квітня 2026", kind:"conf", stamp:"Україна та США", title:"ІІІ Міжнародна наукова конференція «Україна та США: досвід і перспективи співпраці»", text:"Онлайн, з українськими та закордонними дослідниками.", post:"p/DVwWzRijN6x" },
     { date:"2026-03-15", show:"Березень 2026", kind:"course", title:"Інтенсив з адвокації для молоді Ужгорода", text:"Один день про те, як молодь може впливати на рішення у своєму місті.", post:"p/DV3ohtrDOhY" },
     { date:"2026-02-07", show:"7–8 лютого 2026", kind:"course", stamp:"Курс молодого політика", title:"«Курс молодого політика»", text:"Два дні офлайн у Києві: як працює держава зсередини та Україна на світовій арені. За підтримки проєкту Youth Connect for Ukraine.", post:"p/DUim9LXjDyq" },
     { date:"2026-01-30", show:"30 січня 2026", kind:"lec", title:"Презентація звіту «The Values Index» від Snake Island Institute", text:"Про адвокацію інтересів України у США та стажування для молоді. КНУ імені Тараса Шевченка.", post:"p/DUsq-qFDDBM" },
@@ -542,12 +506,12 @@ const DATA = {
   kindsPlural: { conf:"Конференції", dip:"Дипломатія", lec:"Лекції та дискусії", course:"Курси" },
 
   formats: [
-    { icon:"M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6", title:"Міжнародні конференції", text:"Подаєш тези, виступаєш перед дослідниками з України та з-за кордону, отримуєш публікацію у збірнику.", ex:"<b>Приклад:</b> щорічна конференція пам’яті Юрія Кнорозова, уже чотири роки поспіль." },
-    { icon:"M3 21h18M5 21V8h14v13M9 21v-5h6v5M12 8V3M12 3l5 2-5 2", title:"Посольські лекції", text:"Раз на два місяці група студентів іде до посольства на лекцію посла та розмову без камер.", ex:"<b>Перша:</b> Посольство Австрії, листопад 2026." },
-    { icon:"M4 5h16v11H4zM8 20h8M12 16v4", title:"Відкриті лекції та дискусії", text:"Запрошуємо аналітиків, журналістів і дослідників до університету. Вхід вільний за реєстрацією.", ex:"<b>Приклад:</b> «Чи ефективна ООН сьогодні?», травень 2026." },
+    { icon:"M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6", title:"Міжнародні наукові конференції", text:"Подаєш тези, виступаєш перед дослідниками з України та з-за кордону, обговорюєш свою роботу у фаховій секції.", ex:"<b>Приклад:</b> щорічна конференція пам’яті Юрія Кнорозова, чотири роки поспіль." },
+    { icon:"M5 4h11l3 3v13H5zM9 9h6M9 13h6M9 17h4", title:"Збірники та публікації", text:"За підсумками конференцій видаємо збірники тез. Для багатьох учасників це перша наукова публікація.", ex:"<b>Приклад:</b> збірники тез із присвоєнням ISBN." },
+    { icon:"M4 5h16v11H4zM8 20h8M12 16v4", title:"Відкриті лекції та дискусії", text:"Запрошуємо до університету дослідників, аналітиків і журналістів. Вхід вільний за реєстрацією.", ex:"<b>Приклад:</b> «Чи ефективна ООН сьогодні?», травень 2026." },
     { icon:"M12 3l9 5-9 5-9-5 9-5zM6 11v5c2 2 10 2 12 0v-5", title:"Курси та інтенсиви", text:"Короткі практичні програми про те, як працює держава, адвокація та зовнішня політика.", ex:"<b>Приклад:</b> «Курс молодого політика», два дні в Києві." },
-    { icon:"M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18", title:"Міжнародні діалоги", text:"Телемости та спільні проєкти зі студентами інших країн, передусім Латинської Америки.", ex:"<b>Приклад:</b> телеміст Україна – Еквадор." },
-    { icon:"M5 4h11l3 3v13H5zM9 9h6M9 13h6M9 17h4", title:"Публікації", text:"Видаємо збірники матеріалів конференцій. Для багатьох учасників це перша наукова публікація.", ex:"<b>Приклад:</b> збірники тез з ISBN." }
+    { icon:"M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18", title:"Міжнародні діалоги", text:"Телемости та спільні проєкти зі студентами й науковцями інших країн, передусім Латинської Америки.", ex:"<b>Приклад:</b> телеміст Україна – Еквадор." },
+    { icon:"M3 21h18M5 21V8h14v13M9 21v-5h6v5M12 8V3M12 3l5 2-5 2", title:"Зустрічі з дипломатами", text:"Організовуємо зустрічі з послами та дипломатами. Учасників відбираємо з-поміж найактивніших студентів.", ex:"<b>Приклад:</b> зустріч із Послом Австрії, листопад 2026." }
   ],
 
   road: [
@@ -555,23 +519,42 @@ const DATA = {
     { t:"2022", b:"Початок кнорозовської серії", s:"Конференція «Україна – Латинська Америка» до 100-річчя вченого." },
     { t:"2024", b:"Офіційний статус ГО", s:"«Ініціативна група «Вітер змін»» стає громадською організацією." },
     { t:"2026", b:"Курс молодого політика", s:"Перша власна освітня програма за підтримки Youth Connect for Ukraine." },
-    { t:"Листопад 2026", b:"Перша посольська лекція", s:"Зустріч із Послом Австрії. Далі — раз на два місяці." }
+    { t:"2026", b:"Зустріч із Послом Австрії", s:"Перша зустріч наших студентів із послом іноземної держави." }
   ],
 
   /* Команда. Поки масив порожній, блок на сайті прихований. Приклад запису:
      { name:"Ім’я Прізвище", role:"Координатор подій" } */
   team: [],
 
-  partners: ["КНУ імені Тараса Шевченка","Рада молодих вчених історичного факультету КНУ","Рада зовнішньої політики «Українська призма»","Всеукраїнський молодіжний центр","Snake Island Institute","Youth Connect for Ukraine (British Council)","ГО «Науковці»","UDP","Gov4You","УжНУ","Наукове товариство ЛНУ імені Івана Франка"],
+  /* Партнери: групи та короткий опис спільної роботи. mono — 2–3 літери для значка. */
+  partners: [
+    { group:"Університети та наукові спільноти", items:[
+      { mono:"КНУ", name:"КНУ імені Тараса Шевченка", note:"Майданчик більшості наших подій" },
+      { mono:"РМВ", name:"Рада молодих вчених історичного факультету КНУ", note:"Співорганізатор лекцій і конференцій" },
+      { mono:"УжНУ", name:"Ужгородський національний університет", note:"Конференція до 80-річчя завершення Другої світової" },
+      { mono:"ЛНУ", name:"Наукове товариство ЛНУ імені Івана Франка", note:"Студентсько-аспірантські конференції" }
+    ]},
+    { group:"Аналітичні центри та ГО", items:[
+      { mono:"УП", name:"Рада зовнішньої політики «Українська призма»", note:"Співорганізатор лекцій і конференцій" },
+      { mono:"SII", name:"Snake Island Institute", note:"Презентація звіту «The Values Index»" },
+      { mono:"ГОН", name:"ГО «Науковці»", note:"Меморандум про стратегічне партнерство" },
+      { mono:"UDP", name:"UDP", note:"Дискусія «Чи ефективна ООН сьогодні?»" }
+    ]},
+    { group:"Державні установи та програми", items:[
+      { mono:"ВМЦ", name:"Всеукраїнський молодіжний центр", note:"Блок «Курсу молодого політика»" },
+      { mono:"YC", name:"Youth Connect for Ukraine", note:"British Council Ukraine, підтримка «Курсу молодого політика»" },
+      { mono:"G4Y", name:"Gov4You", note:"Програма для молоді в публічному секторі" }
+    ]}
+  ],
 
   faq: [
-    { q:"Хто може долучитися?", a:"Студенти будь-якого університету та спеціальності, аспіранти, а також старшокласники, яким цікаві історія, міжнародні відносини, політика чи право. На окремі події діє відбір, бо місця обмежені." },
+    { q:"Хто може долучитися?", a:"Студенти будь-якого університету та спеціальності, аспіранти й молоді дослідники, а також старшокласники, яким цікаві історія, міжнародні відносини, політика чи право." },
     { q:"Чи це платно?", a:"Ні. Участь у наших подіях безкоштовна." },
-    { q:"Я не з Києва. Чи є сенс подаватися?", a:"Так. Частина конференцій і лекцій проходить онлайн або у змішаному форматі, а деякі події ми проводимо в інших містах, наприклад в Ужгороді." },
-    { q:"Як потрапити на лекцію до посольства?", a:"Залиш заявку з позначкою «Посольська лекція». Коли дата буде узгоджена, ми напишемо всім зі списку та проведемо короткий відбір. На вході потрібен паспорт або ID-картка." },
     { q:"Чи потрібен науковий досвід, щоб виступити на конференції?", a:"Ні. Для багатьох учасників наша конференція стає першою. Вимоги до тез публікуємо разом з анонсом, а якщо щось незрозуміло, допоможемо." },
-    { q:"Чи дають сертифікати?", a:"Так, учасники конференцій і курсів отримують сертифікати, а тези конференцій виходять у збірнику." },
-    { q:"Ми організація і хочемо зробити спільну подію. Куди писати?", a:"Обери у формі «Партнерство» та коротко опиши ідею. Відповімо протягом двох робочих днів." }
+    { q:"Чи дають сертифікати й публікацію?", a:"Учасники конференцій і курсів отримують сертифікати, а тези конференцій виходять у збірнику." },
+    { q:"Я не з Києва. Чи є сенс подаватися?", a:"Так. Частина конференцій і лекцій проходить онлайн або у змішаному форматі, а деякі події ми проводимо в інших містах, наприклад в Ужгороді." },
+    { q:"Як потрапити на зустріч із дипломатами?", a:"Залиш заявку і познач «Зустріч із дипломатами». Кількість місць на таких зустрічах обмежена, тому учасників ми відбираємо з-поміж найактивніших студентів." },
+    { q:"Ми хочемо зробити спільну подію. Куди писати?", a:"Обери у формі «Співпраця» та коротко опиши ідею." }
   ]
 };
 
@@ -588,9 +571,9 @@ const years = n => { const a = n % 10, b = n % 100; return a === 1 && b !== 11 ?
   const n = new Date().getFullYear() - first;
   const confs = DATA.events.filter(e => e.kind === "conf").length;
   $("#facts").innerHTML = [
+    [confs, "наукових конференцій"],
     [n + " " + years(n), "проводимо події, з " + first + "-го"],
-    [DATA.events.length + "+", "подій за цей час"],
-    [confs, "наукових конференцій"]
+    [DATA.events.length + "+", "подій за цей час"]
   ].map(f => `<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join("");
 })();
 
@@ -604,14 +587,11 @@ const years = n => { const a = n % 10, b = n % 100; return a === 1 && b !== 11 ?
     <a class="stamp ${i % 2 ? "red" : ""}" style="--rot:${rot[i]}deg;--i:${i}" href="${postUrl(e.post)}" target="_blank" rel="noopener">
       <small>${short[e.kind]}</small><b>${esc(label(e))}</b><i>${e.date.split("-").reverse().join(".")}</i>
     </a>`).join("");
+  $("#span").textContent = Math.min(...DATA.events.map(e => +e.date.slice(0, 4))) + "–" + DATA.events[0].date.slice(0, 4);
   $("#passNo").textContent = "№ " + String(DATA.events.length).padStart(3, "0");
   requestAnimationFrame(() => document.body.classList.add("inked"));
 })();
 
-/* посольський сезон */
-$("#visa").innerHTML = DATA.embassy.map(s => s.done
-  ? `<div class="slot done"><a class="stamp red" style="--rot:-5deg" href="${postUrl(s.post)}" target="_blank" rel="noopener"><small>Відбулось</small><b>${esc(s.country)}</b><i>${s.date}</i></a></div>`
-  : `<div class="slot"><div><time>${s.when}</time>${s.country ? esc(s.country) : "посольство узгоджуємо"}</div></div>`).join("");
 
 /* події */
 let evFilter = "all", evAll = false;
@@ -644,7 +624,7 @@ drawEvents();
 /* формати, шлях, партнери, команда, FAQ */
 $("#fmtGrid").innerHTML = DATA.formats.map(f => `<article class="fmt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${f.icon}"/></svg><h3>${f.title}</h3><p>${f.text}</p><p class="ex">${f.ex}</p></article>`).join("");
 $("#road").innerHTML = DATA.road.map(r => `<li><time>${r.t}</time><b>${r.b}</b><br><span style="color:var(--muted);font-size:15.5px">${r.s}</span></li>`).join("");
-$("#partners").innerHTML = DATA.partners.map(p => `<li>${esc(p)}</li>`).join("");
+$("#partnerGroups").innerHTML = DATA.partners.map(g => `<div class="pgroup"><h3>${esc(g.group)}</h3><ul>${g.items.map(p => `<li><i class="mono" aria-hidden="true">${esc(p.mono)}</i><div><b>${esc(p.name)}</b><span>${esc(p.note)}</span></div></li>`).join("")}</ul></div>`).join("");
 if (DATA.team.length) {
   $("#teamBox").hidden = false;
   $("#team").innerHTML = DATA.team.map(p => `<div class="person"><i>${esc(p.name.split(" ").map(w => w[0]).join("").slice(0, 2))}</i><div><b>${esc(p.name)}</b><span>${esc(p.role)}</span></div></div>`).join("");
@@ -659,17 +639,16 @@ $("#nav").addEventListener("click", e => { if (e.target.tagName === "A") { docum
 const spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) $$("#nav a").forEach(a => a.setAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin: "-45% 0px -50% 0px" });
 $$("main section[id]").forEach(s => spy.observe(s));
 /* старі посилання виду #/join з попередньої версії сайту */
-(() => { const m = { join:"apply", events:"events", about:"about", directions:"formats", mentorship:"apply", news:"events", home:"top" }[location.hash.replace(/^#\//, "")]; if (location.hash.startsWith("#/") && m) location.replace("#" + m); })();
+(() => { const m = { join:"apply", events:"events", about:"about", directions:"formats", mentorship:"formats", news:"events", home:"top" }[location.hash.replace(/^#\//, "")]; if (location.hash.startsWith("#/") && m) location.replace("#" + m); })();
 
 /* ================= ФОРМА ЗАЯВКИ ================= */
 const form = $("#form"), box = $("#formBox"), statusEl = $("#formStatus");
 const DRAFT = "pos-application-draft";
-$("#fEvent").innerHTML = ["Посольська лекція (найближча)", "Наукова конференція", "Відкрита лекція або дискусія", "Курс чи інтенсив", "Усе, надсилайте анонси"].map(o => `<option>${o}</option>`).join("");
+$("#fEvent").innerHTML = ["Наукова конференція (виступ з доповіддю)", "Відкрита лекція або дискусія", "Курс чи інтенсив", "Зустріч із дипломатами", "Усе, надсилайте анонси"].map(o => `<option>${o}</option>`).join("");
 
 const MODE = {
-  event:   { title:"Подія", label:"Кілька слів про себе", hint:"Що вивчаєш, що цікавить, про що хотів би запитати посла." },
-  team:    { title:"Команда", label:"Чому хочеш у команду", hint:"Досвід не обов’язковий. Розкажи, що вмієш і скільки часу готовий приділяти." },
-  partner: { title:"Партнерство", label:"Що пропонуєте", hint:"Формат, орієнтовні дати, кількість учасників. Можна англійською." }
+  event:   { title:"Подія", label:"Кілька слів про себе", hint:"Що вивчаєш, над якою темою працюєш або хотів би працювати." },
+  partner: { title:"Співпраця", label:"Що пропонуєте", hint:"Ідея, формат, орієнтовні дати. Можна англійською." }
 };
 function setMode(m) {
   form.mode.value = m;
@@ -697,7 +676,7 @@ function validate() {
 }
 
 function buildText(d, id) {
-  const L = [["Заявка", id + " · " + MODE[d.mode].title], ["Ім’я", d.name], [d.channel, d.contact], ["Університет", d.uni], ["Курс", d.year], ["Цікавить", d.event], ["Роль", d.role], ["Організація", d.org], ["Посада", d.position], ["Повідомлення", d.message]];
+  const L = [["Заявка", id + " · " + MODE[d.mode].title], ["Ім’я", d.name], [d.channel, d.contact], ["Університет", d.uni], ["Курс", d.year], ["Цікавить", d.event], ["Організація", d.org], ["Посада", d.position], ["Повідомлення", d.message]];
   return "Привіт! Заявка з сайту Path of Science.\n" + L.filter(x => x[1]).map(x => x[0] + ": " + x[1]).join("\n");
 }
 
