@@ -3,752 +3,756 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Path of Science — наукова спільнота молоді</title>
-<meta name="description" content="Path of Science — громадська організація, що об’єднує студентів і молодих науковців.">
+<title>Path of Science — наукова спільнота молоді: конференції, лекції, зустрічі з послами</title>
+<meta name="description" content="Path of Science — молодіжна наукова спільнота ГО «Ініціативна група «Вітер змін»». З 2021 року проводимо міжнародні конференції, відкриті лекції та зустрічі студентів із послами в Києві.">
+<link rel="canonical" href="https://cobra283620384720174936.github.io/Path/">
+<meta name="theme-color" content="#0F1E45">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Path of Science">
+<meta property="og:title" content="Path of Science — студенти, які ставлять запитання послам">
+<meta property="og:description" content="Міжнародні конференції, відкриті лекції та зустрічі з дипломатами для студентів. Подати заявку можна за дві хвилини.">
+<meta property="og:url" content="https://cobra283620384720174936.github.io/Path/">
+<meta property="og:image" content="https://cobra283620384720174936.github.io/Path/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1E45'/%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23C8A353' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='12' fill='none' stroke='%23C8A353' stroke-width='1.5' stroke-dasharray='3 3'/%3E%3Ccircle cx='32' cy='13' r='4' fill='%23C8A353'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NGO","name":"Path of Science","alternateName":"ГО «Ініціативна група «Вітер змін»»","url":"https://cobra283620384720174936.github.io/Path/","description":"Молодіжна наукова спільнота: міжнародні конференції, відкриті лекції та зустрічі студентів із дипломатами.","address":{"@type":"PostalAddress","addressLocality":"Київ","addressCountry":"UA"},"sameAs":["https://www.instagram.com/path_of_science/","https://linktr.ee/science_woc"]}
+</script>
 <style>
 :root{
-  --bg:#060B1A; --bg2:#0A1228; --card:#0D1633; --card2:#111C40;
-  --line:rgba(255,255,255,.08); --line2:rgba(227,185,91,.25);
-  --text:#E9EDF8; --muted:#94A0C0; --gold:#E3B95B; --gold2:#F7DC97; --blue:#4A63FF;
-  --fd:'Unbounded',sans-serif; --ft:'Manrope',sans-serif;
-  --r:22px; --max:1200px;
+  --navy:#0F1E45; --navy2:#16295C; --ink:#17223F; --muted:#56627F;
+  --paper:#EEF1F6; --sheet:#FBFCFE; --line:#D3D9E6;
+  --red:#C23A2E; --blue:#2B4ACB; --foil:#C8A353; --foil2:#E6CD8E; --ok:#1F7A4D;
+  --fd:'Geologica',system-ui,sans-serif; --ft:'Golos Text',system-ui,sans-serif; --fm:'JetBrains Mono',ui-monospace,monospace;
+  --max:1160px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--ft);font-size:17px;line-height:1.6;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--paper);color:var(--ink);font-family:var(--ft);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
 button,input,select,textarea{font:inherit;color:inherit}
-.container{max-width:var(--max);margin:0 auto;padding:0 28px}
-::selection{background:var(--gold);color:var(--bg)}
+h1,h2,h3{font-family:var(--fd);font-weight:800;line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(30px,4.2vw,50px)}
+h3{font-size:20px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+p{text-wrap:pretty}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.on-navy :focus-visible{outline-color:var(--foil2)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--sheet);padding:10px 16px;border-radius:8px;z-index:300}
+.skip:focus{left:8px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-/* фон-сітка */
-body::before{content:"";position:fixed;inset:0;z-index:-2;
-  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
-  background-size:80px 80px;mask-image:radial-gradient(ellipse at 50% 0%,#000 20%,transparent 75%);opacity:.5}
-
-/* прогрес скролу */
-.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:200;background:linear-gradient(90deg,var(--gold),var(--gold2))}
-
-/* ---------- ХЕДЕР ---------- */
-.header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.35s}
-.header.scrolled{background:rgba(6,11,26,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
-.logo{display:flex;align-items:center;gap:12px;font-family:var(--fd);font-weight:800;font-size:15px;letter-spacing:.08em}
-.logo-mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:13px;color:var(--bg);
-  background:linear-gradient(135deg,var(--gold2),var(--gold))}
-.nav{display:flex;gap:6px}
-.nav a{padding:9px 15px;border-radius:999px;font-size:15px;font-weight:600;color:var(--muted);transition:.25s}
-.nav a:hover{color:var(--text);background:rgba(255,255,255,.05)}
-.nav a.active{color:var(--bg);background:var(--gold)}
-.burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer;
-  flex-direction:column;align-items:center;justify-content:center;gap:5px}
-.burger span{width:18px;height:2px;background:var(--text);transition:.3s}
+/* шапка */
+.top{position:sticky;top:0;z-index:100;background:rgba(15,30,69,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.logo{display:flex;align-items:center;gap:11px;font-family:var(--fd);font-weight:800;font-size:17px;letter-spacing:-.01em;text-decoration:none;white-space:nowrap}
+.logo svg{width:34px;height:34px;flex:none}
+.nav{display:flex;gap:2px}
+.nav a{padding:8px 13px;border-radius:8px;font-size:15px;font-weight:500;text-decoration:none;color:#C9D2EA}
+.nav a:hover,.nav a[aria-current="true"]{color:#fff;background:rgba(255,255,255,.09)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:10px;border:2px solid transparent;font-weight:600;font-size:16px;text-decoration:none;cursor:pointer;transition:background .15s,border-color .15s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn-foil{background:var(--foil);color:var(--navy)}
+.btn-foil:hover{background:var(--foil2)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy2)}
+.btn-line{border-color:rgba(255,255,255,.35);color:#fff}
+.btn-line:hover{border-color:#fff}
+.btn-out{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-out:hover{background:var(--navy);color:#fff}
+.btn-sm{padding:9px 16px;font-size:15px}
+.burger{display:none;width:44px;height:44px;border:0;background:transparent;cursor:pointer;border-radius:8px}
+.burger span{display:block;width:22px;height:2px;background:#fff;margin:5px auto;transition:.2s}
 .menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .menu-open .burger span:nth-child(2){opacity:0}
 .menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mobile-menu{position:fixed;inset:0;z-index:90;background:rgba(6,11,26,.97);display:flex;flex-direction:column;justify-content:center;
-  padding:0 32px;gap:6px;opacity:0;pointer-events:none;transition:.35s}
-.menu-open .mobile-menu{opacity:1;pointer-events:auto}
-.mobile-menu a{font-family:var(--fd);font-size:30px;font-weight:600;padding:8px 0;border-bottom:1px solid var(--line)}
-.mobile-menu a.active{color:var(--gold)}
 
-/* ---------- КНОПКИ ---------- */
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:700;font-size:15.5px;
-  cursor:pointer;border:1px solid transparent;transition:.3s;white-space:nowrap}
-.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--bg);box-shadow:0 10px 40px -10px rgba(227,185,91,.6)}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 50px -10px rgba(227,185,91,.75)}
-.btn-ghost{border-color:rgba(255,255,255,.18);color:var(--text)}
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.btn .arr{transition:.3s}
-.btn:hover .arr{transform:translateX(4px)}
+/* герой: обкладинка паспорта + сторінка зі штампами */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+  background:repeating-radial-gradient(circle at 78% 46%,transparent 0 22px,rgba(200,163,83,.07) 22px 23px)}
+.hero-in>*,.emb>*,.about>*,.apply-grid>*{min-width:0}
+.hero-in{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:76px 28px 88px}
+.hero h1{font-size:clamp(38px,5.6vw,72px)}
+.hero h1 em{font-style:normal;color:var(--foil2)}
+.hero .lead{font-size:clamp(17px,1.5vw,19.5px);color:#C9D2EA;max-width:560px;margin-top:22px}
+.hero-act{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero-facts{display:flex;gap:34px;flex-wrap:wrap;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.14)}
+.hero-facts b{display:block;font-family:var(--fd);font-size:30px;font-weight:800;color:var(--foil2);line-height:1.1}
+.hero-facts span{font-size:14.5px;color:#AEB9D6}
 
-/* ---------- СТОРІНКИ ---------- */
-.page{display:none}
-.page.active{display:block;animation:pageIn .6s ease}
-@keyframes pageIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.pass{position:relative;background:var(--sheet);color:var(--ink);border-radius:6px 18px 18px 6px;padding:26px 26px 0;transform:rotate(1.6deg);
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.55), inset 14px 0 18px -14px rgba(15,30,69,.28);
+  background-image:repeating-linear-gradient(115deg,rgba(43,74,203,.045) 0 2px,transparent 2px 9px)}
+.pass-head{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--fm);font-size:11.5px;letter-spacing:.08em;color:var(--muted);border-bottom:1px dashed var(--line);padding-bottom:10px}
+.pass-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px;padding:26px 4px 30px}
+.mrz{font-family:var(--fm);font-size:12px;letter-spacing:.12em;color:#7F8AA6;background:#F1F4FA;margin:0 -26px;padding:12px 26px;border-radius:0 0 18px 6px;white-space:nowrap;overflow:hidden}
 
-.kicker{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;border:1px solid var(--line2);
-  background:rgba(227,185,91,.07);color:var(--gold);font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
-.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
-h1,h2,h3,h4{font-family:var(--fd);line-height:1.12;letter-spacing:-.01em}
-.grad{background:linear-gradient(120deg,var(--gold2),var(--gold) 60%,#C9963A);-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:620px}
+/* штамп */
+.stamp{--c:var(--blue);--rot:-4deg;display:block;text-decoration:none;font-family:var(--fm);color:var(--c);border:2.5px solid var(--c);border-radius:10px;padding:10px 12px 9px;transform:rotate(var(--rot));
+  box-shadow:inset 0 0 0 3px var(--sheet), inset 0 0 0 4.5px var(--c);filter:url(#ink);opacity:.92;text-align:center;transition:transform .2s}
+a.stamp:hover{transform:rotate(0) scale(1.03)}
+.stamp.red{--c:var(--red)} .stamp.round{border-radius:50%;aspect-ratio:1;display:grid;place-content:center;padding:14px}
+.stamp b{display:block;font-size:13.5px;font-weight:700;letter-spacing:.06em;line-height:1.25;text-transform:uppercase}
+.stamp i{display:block;font-style:normal;font-size:11px;letter-spacing:.1em;margin-top:5px;border-top:1.5px solid var(--c);padding-top:5px}
+.stamp small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:3px}
+.pass .stamp{opacity:0}
+.inked .pass .stamp{animation:thump .34s cubic-bezier(.2,1.5,.4,1) forwards;animation-delay:calc(var(--i)*.22s + .3s)}
+@keyframes thump{0%{opacity:0;transform:rotate(var(--rot)) scale(1.9)}100%{opacity:.92;transform:rotate(var(--rot)) scale(1)}}
 
-.section{padding:120px 0}
-.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
-.section-head h2{font-size:clamp(30px,4vw,52px);max-width:720px;margin-top:18px}
-.section-head p{color:var(--muted);max-width:380px}
+/* секції */
+.sec{padding:96px 0}
+.sec-head{max-width:760px;margin-bottom:44px}
+.sec-head p{color:var(--muted);font-size:18px;margin-top:16px}
+.sheet{background:var(--sheet);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 
-/* ---------- ГЕРОЙ ---------- */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:140px 0 80px;overflow:hidden}
-.orb{position:absolute;border-radius:50%;filter:blur(90px);z-index:-1;animation:float 14s ease-in-out infinite}
-.orb.o1{width:560px;height:560px;background:rgba(74,99,255,.35);top:-160px;right:-120px}
-.orb.o2{width:420px;height:420px;background:rgba(227,185,91,.22);bottom:-120px;left:-100px;animation-delay:-6s}
-@keyframes float{50%{transform:translate(40px,30px) scale(1.08)}}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
-.hero h1{font-size:clamp(40px,6.4vw,88px);font-weight:800;margin:26px 0 26px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
-
-.orbit{position:relative;aspect-ratio:1;max-width:480px;margin-left:auto;width:100%}
-.ring{position:absolute;inset:0;border-radius:50%;border:1px solid var(--line2)}
-.ring.r2{inset:12%;border-color:rgba(255,255,255,.1);animation:spin 40s linear infinite reverse}
-.ring.r3{inset:26%;border-style:dashed;border-color:rgba(227,185,91,.35);animation:spin 26s linear infinite}
-.ring.r1{animation:spin 60s linear infinite}
-.ring .dot{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 22px var(--gold);top:-7px;left:calc(50% - 7px)}
-.ring.r2 .dot{background:var(--blue);box-shadow:0 0 22px var(--blue);width:10px;height:10px;top:-5px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.core{position:absolute;inset:36%;border-radius:50%;display:grid;place-items:center;text-align:center;
-  background:radial-gradient(circle at 30% 30%,#1B2A60,#0A1230);border:1px solid var(--line2);box-shadow:0 0 80px rgba(227,185,91,.18)}
-.core b{font-family:var(--fd);font-size:clamp(26px,3vw,40px);font-weight:800}
-.core small{display:block;font-size:11px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;margin-top:4px}
-.tag-float{position:absolute;padding:10px 16px;border-radius:14px;background:rgba(13,22,51,.85);border:1px solid var(--line);
-  backdrop-filter:blur(8px);font-size:13.5px;font-weight:700;animation:bob 6s ease-in-out infinite}
-.tag-float span{color:var(--gold)}
-.tf1{top:8%;left:-4%}.tf2{bottom:14%;left:-8%;animation-delay:-2s}.tf3{top:46%;right:-6%;animation-delay:-4s}
-@keyframes bob{50%{transform:translateY(-12px)}}
-
-/* ---------- БІГУЧИЙ РЯДОК ---------- */
-.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:26px 0;background:var(--bg2)}
-.marquee-track{display:flex;gap:56px;width:max-content;animation:marq 32s linear infinite}
-.marquee-track span{font-family:var(--fd);font-size:clamp(20px,2.6vw,34px);font-weight:600;white-space:nowrap;color:rgba(255,255,255,.18)}
-.marquee-track span.g{color:var(--gold)}
-@keyframes marq{to{transform:translateX(-50%)}}
-
-/* ---------- ЦИФРИ ---------- */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--bg2)}
-.stat{padding:42px 34px;border-right:1px solid var(--line)}
-.stat:last-child{border-right:0}
-.stat b{display:block;font-family:var(--fd);font-size:clamp(36px,4.4vw,60px);font-weight:800;color:var(--gold)}
-.stat span{color:var(--muted);font-size:15px}
-
-/* ---------- КАРТКИ ---------- */
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.card{position:relative;padding:36px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);overflow:hidden;transition:.35s}
-.card::before{content:"";position:absolute;inset:0;opacity:0;transition:.35s;pointer-events:none;
-  background:radial-gradient(380px circle at var(--x,50%) var(--y,50%),rgba(227,185,91,.13),transparent 60%)}
-.card:hover{transform:translateY(-6px);border-color:var(--line2)}
-.card:hover::before{opacity:1}
-.card .num{font-family:var(--fd);font-size:13px;color:var(--gold);letter-spacing:.15em}
-.card h3{font-size:21px;margin:18px 0 12px}
-.card p{color:var(--muted);font-size:15.5px}
-.icon{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:24px;margin-bottom:22px;
-  background:rgba(227,185,91,.1);border:1px solid var(--line2);color:var(--gold)}
-.card ul{list-style:none;margin-top:18px;display:grid;gap:9px}
-.card li{display:flex;gap:10px;font-size:15px;color:var(--text)}
-.card li::before{content:"→";color:var(--gold)}
-.more{display:inline-flex;margin-top:22px;font-weight:700;font-size:14.5px;color:var(--gold);gap:8px}
-
-/* шлях учасника */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
-.step{position:relative;padding:34px 28px;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(180deg,var(--card),var(--bg))}
-.step b{font-family:var(--fd);font-size:46px;font-weight:800;color:transparent;-webkit-text-stroke:1px var(--gold)}
-.step h4{font-size:18px;margin:14px 0 10px}
-.step p{color:var(--muted);font-size:15px}
-
-/* розділена секція */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.split h2{font-size:clamp(30px,3.8vw,50px);margin:18px 0 24px}
-.split p{color:var(--muted);margin-bottom:16px}
-.quote{padding:48px;border-radius:var(--r);background:linear-gradient(135deg,#14214D,#0A1230);border:1px solid var(--line2);position:relative}
-.quote::before{content:"“";position:absolute;top:-10px;left:30px;font-family:var(--fd);font-size:140px;color:var(--gold);opacity:.35;line-height:1}
-.quote p{font-family:var(--fd);font-size:clamp(20px,2.2vw,28px);line-height:1.35;color:var(--text);position:relative}
-.quote small{display:block;margin-top:22px;color:var(--gold);letter-spacing:.15em;text-transform:uppercase;font-size:12px;font-weight:700}
+/* посольські лекції */
+.emb{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
+.emb-how{list-style:none;counter-reset:n;display:grid;gap:18px;margin-top:30px}
+.emb-how li{counter-increment:n;display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start}
+.emb-how li::before{content:counter(n);font-family:var(--fd);font-weight:800;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--foil2);font-size:16px}
+.emb-how b{display:block;font-weight:600}
+.emb-how span{color:var(--muted);font-size:15.5px}
+.visa{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px}
+.visa-head{display:flex;justify-content:space-between;gap:10px;font-family:var(--fm);font-size:12px;letter-spacing:.06em;color:var(--muted);margin-bottom:16px}
+.visa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.slot{min-height:132px;border-radius:12px;background:var(--sheet);border:1px dashed #B5BED3;display:grid;place-content:center;text-align:center;padding:12px;font-size:13.5px;color:var(--muted)}
+.slot.done{border-style:solid;border-color:var(--line)}
+.slot time{font-family:var(--fm);font-size:12px;letter-spacing:.06em;display:block;color:var(--ink);margin-bottom:4px}
+.emb-note{margin-top:18px;padding:18px 20px;border-left:4px solid var(--foil);background:var(--sheet);border-radius:0 12px 12px 0;font-size:15.5px}
+.emb-note b{font-weight:600}
+.emb-act{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 
 /* події */
-.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
-.tab{padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-weight:600;font-size:14.5px;color:var(--muted);transition:.25s}
-.tab:hover{color:var(--text);border-color:rgba(255,255,255,.25)}
-.tab.active{background:var(--gold);color:var(--bg);border-color:var(--gold)}
-.event-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.pill{padding:6px 13px;border-radius:999px;font-size:12.5px;font-weight:700;background:rgba(74,99,255,.15);color:#A9B6FF;border:1px solid rgba(74,99,255,.3)}
-.date{font-size:13.5px;color:var(--gold);font-weight:700}
-.meta{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.chip{padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--sheet);cursor:pointer;font-size:15px;font-weight:500;color:var(--muted)}
+.chip:hover{border-color:var(--navy);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip span{opacity:.6;margin-left:4px;font-size:13px}
+.year{font-family:var(--fd);font-weight:800;font-size:30px;color:var(--navy);padding:34px 0 8px;border-bottom:2px solid var(--navy)}
+.ev{display:grid;grid-template-columns:150px 1fr auto;gap:8px 24px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.ev time{font-family:var(--fm);font-size:13.5px;color:var(--muted);letter-spacing:.02em}
+.ev h3{font-size:18.5px}
+.ev p{color:var(--muted);font-size:15.5px;margin-top:4px;max-width:660px}
+.ev .kind{font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.k-conf{background:#E3E8F8;color:#24388F}.k-dip{background:#F6E3E1;color:#96271D}.k-lec{background:#F3EAD3;color:#6E5416}.k-course{background:#DDEFE5;color:#1B6540}
+.ev a.more{font-size:14.5px;font-weight:600;color:var(--blue);white-space:nowrap}
+.ev-more{margin-top:26px}
 
-/* ментори */
-.mentor{text-align:center}
-.avatar{width:110px;height:110px;margin:0 auto 20px;border-radius:50%;display:grid;place-items:center;font-family:var(--fd);font-size:28px;font-weight:800;
-  color:var(--bg);background:linear-gradient(135deg,var(--gold2),var(--gold));box-shadow:0 0 0 6px rgba(227,185,91,.12)}
+/* формати */
+.formats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.fmt{padding:30px 28px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--sheet)}
+.fmt svg{width:34px;height:34px;color:var(--navy);margin-bottom:18px}
+.fmt p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.fmt .ex{margin-top:14px;font-size:14.5px;color:var(--ink)}
+.fmt .ex b{font-weight:600}
+
+/* про нас */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
+.about p+p{margin-top:16px}
+.about .big{font-size:20px}
+.road{list-style:none;border-left:2px solid var(--navy);margin-left:8px}
+.road li{position:relative;padding:0 0 26px 28px}
+.road li:last-child{padding-bottom:0}
+.road li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--foil);border:3px solid var(--navy)}
+.road time{font-family:var(--fm);font-size:13px;color:var(--muted);display:block}
+.road b{font-weight:600}
+.partners{margin-top:64px;padding-top:34px;border-top:1px solid var(--line)}
+.partners h3{margin-bottom:18px}
+.partners ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.partners li{padding:9px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:15px;font-weight:500}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.person{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.person i{font-style:normal;flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--foil2);font-family:var(--fd);font-weight:800}
+.person span{display:block;font-size:14.5px;color:var(--muted)}
+
+/* заявка */
+.apply{background:var(--navy);color:#fff}
+.apply .sec-head p{color:#C9D2EA}
+.apply-grid{display:grid;grid-template-columns:1fr 360px;gap:44px;align-items:start}
+.form{background:var(--sheet);color:var(--ink);border-radius:18px;padding:30px}
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:26px}
+.modes label{position:relative;cursor:pointer}
+.modes input{position:absolute;opacity:0}
+.modes span{display:block;padding:14px 12px;border-radius:12px;border:2px solid var(--line);font-weight:600;font-size:15.5px;line-height:1.3;height:100%}
+.modes small{display:block;font-weight:400;color:var(--muted);font-size:13.5px;margin-top:3px}
+.modes input:checked+span{border-color:var(--navy);background:#E9EDF8}
+.modes input:focus-visible+span{outline:3px solid var(--blue);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f{margin-bottom:16px}
+.f label,.f legend{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.f .opt{font-weight:400;color:var(--muted)}
+.f input,.f select,.f textarea{width:100%;padding:13px 14px;border-radius:10px;border:1.5px solid #B9C2D6;background:#fff;outline:none}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(43,74,203,.18)}
+.f textarea{min-height:104px;resize:vertical}
+.f .hint{font-size:13.5px;color:var(--muted);margin-top:5px}
+.f.bad input,.f.bad select,.f.bad textarea{border-color:var(--red)}
+.f .err{display:none;color:var(--red);font-size:14px;margin-top:5px}
+.f.bad .err{display:block}
+.contact{display:grid;grid-template-columns:150px 1fr;gap:10px}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--muted);margin:6px 0 20px}
+.agree input{width:20px;height:20px;margin-top:2px;flex:none;accent-color:var(--navy)}
+.hp{position:absolute;left:-9999px}
+.form-foot{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.form-foot small{color:var(--muted);font-size:14px}
+.result{display:none;text-align:center;padding:20px 6px}
+.result h3{font-size:26px;font-weight:800;margin:22px 0 10px}
+.result p{color:var(--muted);max-width:480px;margin:0 auto}
+.result .stamp{display:inline-block;--rot:-6deg;--c:var(--ok);padding:14px 22px}
+.result pre{text-align:left;white-space:pre-wrap;font-family:var(--ft);font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;margin:20px 0}
+.result .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.form.sent form{display:none}.form.sent .result{display:block}
+.side{display:grid;gap:14px}
+.side-card{border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:22px}
+.side-card h3{color:var(--foil2);margin-bottom:10px}
+.side-card ol{padding-left:20px;color:#C9D2EA;font-size:15.5px;display:grid;gap:6px}
+.side-card p{color:#C9D2EA;font-size:15.5px}
+.side-card a{color:#fff;font-weight:600}
 
 /* FAQ */
-.faq{display:grid;gap:14px;max-width:860px}
-.faq details{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:0 28px;transition:.3s}
-.faq details[open]{border-color:var(--line2)}
-.faq summary{list-style:none;cursor:pointer;padding:24px 0;font-weight:700;font-size:17px;display:flex;justify-content:space-between;gap:20px}
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:600;font-size:18px;position:relative}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:24px;color:var(--gold);transition:.3s;line-height:1}
+.faq summary::after{content:"+";position:absolute;right:6px;top:14px;font-size:28px;font-weight:400;color:var(--navy);transition:transform .2s}
 .faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{color:var(--muted);padding-bottom:24px}
-
-/* CTA */
-.cta{position:relative;border-radius:32px;padding:80px 60px;overflow:hidden;text-align:center;
-  background:radial-gradient(600px 300px at 50% 0%,rgba(227,185,91,.25),transparent),linear-gradient(135deg,#13204B,#0A1230);border:1px solid var(--line2)}
-.cta h2{font-size:clamp(30px,4.4vw,58px);margin:20px auto 18px;max-width:820px}
-.cta p{color:var(--muted);max-width:560px;margin:0 auto 34px}
-
-/* внутрішній герой */
-.page-hero{padding:180px 0 80px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
-.page-hero h1{font-size:clamp(36px,5.6vw,76px);font-weight:800;margin:24px 0 20px;max-width:900px}
-
-/* форма */
-.form{display:grid;gap:16px}
-.field label{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-.field input,.field select,.field textarea{width:100%;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:var(--bg2);outline:none;transition:.25s}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
-.field textarea{min-height:120px;resize:vertical}
-.form-note{font-size:14px;color:var(--gold);min-height:22px}
+.faq details p{color:var(--muted);padding:0 40px 22px 0}
 
 /* футер */
-.footer{border-top:1px solid var(--line);padding:80px 0 34px;margin-top:40px;background:var(--bg2)}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:50px}
-.footer h5{font-family:var(--fd);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-.footer-links{display:grid;gap:10px;color:var(--muted);font-size:15px}
-.footer-links a:hover{color:var(--gold)}
-.footer-word{font-family:var(--fd);font-weight:800;font-size:clamp(38px,9.5vw,140px);line-height:1;letter-spacing:-.03em;
-  color:transparent;-webkit-text-stroke:1px rgba(227,185,91,.35);white-space:nowrap;overflow:hidden}
-.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:30px;padding-top:24px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+.foot{background:var(--navy);color:#C9D2EA;padding:56px 0 30px;border-top:1px solid rgba(255,255,255,.12)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot h3{color:#fff;font-size:16px;margin-bottom:12px}
+.foot ul{list-style:none;display:grid;gap:8px;font-size:15.5px}
+.foot a{text-decoration:none}.foot a:hover{color:#fff;text-decoration:underline}
+.foot-bottom{margin-top:44px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.mobile-cta{display:none}
 
-/* анімація появи */
-.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
-.reveal.visible{opacity:1;transform:none}
-
-/* адаптив */
-@media(max-width:1050px){
-  .grid-3{grid-template-columns:repeat(2,1fr)}
-  .steps{grid-template-columns:repeat(2,1fr)}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:0}
-  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .hero-grid,.split{grid-template-columns:1fr;gap:50px}
-  .orbit{margin:0 auto;max-width:400px}
-}
-@media(max-width:900px){
-  .nav,.header .btn{display:none}
-  .burger{display:flex}
+@media(max-width:1000px){
+  .hero-in,.emb,.about,.apply-grid{grid-template-columns:1fr}
+  .hero-in{padding:52px 28px 64px;gap:44px}
+  .pass{max-width:480px;transform:rotate(0)}
+  .formats{grid-template-columns:1fr 1fr}
+  .team{grid-template-columns:1fr 1fr}
+  .nav{position:fixed;inset:68px 0 auto 0;background:var(--navy);flex-direction:column;padding:12px 20px 22px;border-bottom:1px solid rgba(255,255,255,.14);display:none}
+  .menu-open .nav{display:flex}
+  .nav a{padding:13px 10px;font-size:17px}
+  .burger{display:block}
+  .top .btn{display:none}
 }
 @media(max-width:640px){
-  .container{padding:0 20px}
-  .section{padding:80px 0}
-  .grid-3,.grid-2,.steps,.footer-grid{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr}
-  .stat{border-right:0;border-bottom:1px solid var(--line)}
-  .cta{padding:56px 24px}
-  .tf1,.tf2,.tf3{display:none}
+  body{font-size:16px;padding-bottom:72px}
+  .wrap{padding:0 18px}.hero-in{padding:40px 18px 52px}
+  .sec{padding:64px 0}
+  .hero-facts{gap:22px}
+  .formats,.team,.foot-grid,.row{grid-template-columns:1fr}
+  .row{gap:0}
+  .modes{grid-template-columns:1fr}
+  .visa-grid{grid-template-columns:1fr 1fr}
+  .ev{grid-template-columns:1fr auto;gap:4px 12px}
+  .ev time{grid-column:1}.ev .kind{grid-column:2;grid-row:1;justify-self:end}
+  .ev .body{grid-column:1/-1}
+  .form{padding:22px 18px}
+  .contact{grid-template-columns:1fr}
+  .pass-grid{gap:14px 10px}
+  .stamp b{font-size:12px}
+  .mobile-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(15,30,69,.96);border-top:1px solid rgba(255,255,255,.14)}
+  .mobile-cta .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .pass .stamp{opacity:.92}
 }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Перейти до змісту</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter></svg>
 
-<div class="progress" id="progress"></div>
-
-<!-- ============ ХЕДЕР ============ -->
-<header class="header" id="header">
-  <div class="container header-inner">
-    <a class="logo" href="#/home"><span class="logo-mark">PoS</span>PATH OF SCIENCE</a>
-    <nav class="nav">
-      <a data-link href="#/home">Головна</a>
-      <a data-link href="#/about">Про нас</a>
-      <a data-link href="#/directions">Напрями</a>
-      <a data-link href="#/events">Події</a>
-      <a data-link href="#/mentorship">Менторство</a>
-      <a data-link href="#/news">Новини</a>
+<header class="top on-navy">
+  <div class="wrap top-in">
+    <a class="logo" href="#top" aria-label="Path of Science, на початок">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#C8A353" stroke-width="3"/><circle cx="32" cy="32" r="17" fill="none" stroke="#C8A353" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="32" cy="6" r="5" fill="#C8A353"/></svg>
+      Path of Science
+    </a>
+    <nav class="nav" id="nav" aria-label="Головна навігація">
+      <a href="#embassy">Посольські лекції</a>
+      <a href="#events">Події</a>
+      <a href="#formats">Що ми робимо</a>
+      <a href="#about">Про нас</a>
+      <a href="#faq">Питання</a>
     </nav>
-    <a class="btn btn-gold" href="#/join">Доєднатися <span class="arr">→</span></a>
-    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    <a class="btn btn-foil btn-sm" href="#apply">Подати заявку</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<div class="mobile-menu">
-  <a data-link href="#/home">Головна</a>
-  <a data-link href="#/about">Про нас</a>
-  <a data-link href="#/directions">Напрями</a>
-  <a data-link href="#/events">Події</a>
-  <a data-link href="#/mentorship">Менторство</a>
-  <a data-link href="#/news">Новини</a>
-  <a data-link href="#/join">Доєднатися</a>
-</div>
+<main id="main">
 
-<main>
+<section class="hero on-navy" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <h1>Студенти, які ставлять запитання <em>послам</em></h1>
+      <p class="lead">Path of Science — молодіжна наукова спільнота в Києві. Проводимо міжнародні конференції, відкриті лекції та зустрічі з дипломатами. Участь у подіях безкоштовна.</p>
+      <div class="hero-act">
+        <a class="btn btn-foil" href="#apply">Подати заявку</a>
+        <a class="btn btn-line" href="#events">Подивитися події</a>
+      </div>
+      <div class="hero-facts" id="facts"></div>
+    </div>
+    <div class="pass" aria-label="Останні події спільноти">
+      <div class="pass-head"><span>ВІЗИ / VISAS</span><span id="passNo"></span></div>
+      <div class="pass-grid" id="passStamps"></div>
+      <div class="mrz" aria-hidden="true">P&lt;UKR&lt;PATH&lt;OF&lt;SCIENCE&lt;&lt;KYIV&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div>
+    </div>
+  </div>
+</section>
 
-<!-- ============ ГОЛОВНА ============ -->
-<section class="page" data-page="home">
-  <div class="hero">
-    <div class="orb o1"></div><div class="orb o2"></div>
-    <div class="container hero-grid">
+<section class="sec sheet" id="embassy">
+  <div class="wrap emb">
+    <div>
+      <h2>Посольські лекції: раз на два місяці в гості до посла</h2>
+      <p style="color:var(--muted);font-size:18px;margin-top:16px">Ми приводимо групу студентів до посольства, де посол читає лекцію і відповідає на запитання. Без протокольних промов: жива розмова про дипломатію, свою країну та кар’єру.</p>
+      <ol class="emb-how">
+        <li><div><b>Залишаєш заявку</b><span>Вказуєш, як із тобою зв’язатися. Це дві хвилини.</span></div></li>
+        <li><div><b>Отримуєш запрошення</b><span>Коли узгодимо дату з посольством, напишемо тим, хто в списку. Місць мало, тож діє відбір.</span></div></li>
+        <li><div><b>Готуєш запитання</b><span>Перед зустріччю надсилаємо коротку довідку про країну та спікера.</span></div></li>
+        <li><div><b>Приходиш із паспортом</b><span>Посольства перевіряють документи на вході, списки подаємо заздалегідь.</span></div></li>
+      </ol>
+      <div class="emb-act">
+        <a class="btn btn-navy" href="#apply" data-mode="event" data-event="Посольська лекція (найближча)">Хочу на наступну лекцію</a>
+        <a class="btn btn-out" href="#apply" data-mode="partner">Запросити нас до посольства</a>
+      </div>
+    </div>
+    <div>
+      <div class="visa">
+        <div class="visa-head"><span>СЕЗОН 2026/27</span><span>6 ЗУСТРІЧЕЙ</span></div>
+        <div class="visa-grid" id="visa"></div>
+      </div>
+      <p class="emb-note" lang="en"><b>For embassies.</b> We bring 20–30 motivated Ukrainian students for a one-hour talk and Q&amp;A with the Ambassador. We handle selection, guest lists and coverage. <a href="#apply" data-mode="partner">Leave a request</a> and we will get back within two working days.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="events">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Події, які ми вже провели</h2>
+      <p>Кожен рядок веде на допис із фото та підсумками. Анонси нових подій з’являються тут і в Instagram.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Фільтр подій"></div>
+    <div id="evList" aria-live="polite"></div>
+    <div class="ev-more"><button class="btn btn-out" id="evMore" type="button">Показати ранні роки</button></div>
+  </div>
+</section>
+
+<section class="sec sheet" id="formats">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Що ми робимо</h2>
+      <p>Шість форматів. Можна прийти слухачем на одну лекцію, а можна вирости до модератора секції на міжнародній конференції.</p>
+    </div>
+    <div class="formats" id="fmtGrid"></div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="about">
       <div>
-        <span class="kicker reveal">Громадська організація · Україна</span>
-        <h1 class="reveal">Наука, що <span class="grad">формує майбутнє</span></h1>
-        <p class="lead reveal">Path of Science об’єднує студентів і молодих науковців, які хочуть поєднати дослідження, публічну політику та громадську дію.</p>
-        <div class="hero-actions reveal">
-          <a class="btn btn-gold" href="#/join">Стати учасником <span class="arr">→</span></a>
-          <a class="btn btn-ghost" href="#/directions">Наші напрями</a>
+        <h2>Хто ми</h2>
+        <p class="big" style="margin-top:22px">Path of Science — проєкт громадської організації «Ініціативна група «Вітер змін»» (Wind of Changes). Нас об’єднав історичний факультет КНУ імені Тараса Шевченка, а сьогодні до подій долучаються студенти з різних університетів і міст.</p>
+        <p style="color:var(--muted)">Ми вважаємо, що наука не має лишатися в аудиторії. Тому зводимо студентів із тими, хто ухвалює рішення: дипломатами, аналітиками, державними службовцями, дослідниками з-за кордону. Найдовша наша традиція — щорічна міжнародна конференція пам’яті Юрія Кнорозова, українського вченого, який дешифрував писемність мая.</p>
+        <p><a class="btn btn-navy" href="#apply" data-mode="team" style="margin-top:14px">Долучитися до команди</a></p>
+      </div>
+      <ol class="road" id="road"></ol>
+    </div>
+    <div id="teamBox" hidden>
+      <div class="partners"><h3>Команда</h3><div class="team" id="team"></div></div>
+    </div>
+    <div class="partners">
+      <h3>З ким ми працювали</h3>
+      <ul id="partners"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec apply on-navy" id="apply">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Подати заявку</h2>
+      <p>Обери, що тебе цікавить. Відповідаємо протягом двох робочих днів у той месенджер, який вкажеш.</p>
+    </div>
+    <div class="apply-grid">
+      <div class="form" id="formBox">
+        <form id="form" novalidate>
+          <fieldset class="modes" style="border:0">
+            <legend class="vh">Тип заявки</legend>
+            <label><input type="radio" name="mode" value="event" checked><span>Хочу на подію<small>лекція, конференція, курс</small></span></label>
+            <label><input type="radio" name="mode" value="team"><span>Хочу в команду<small>організовувати події</small></span></label>
+            <label><input type="radio" name="mode" value="partner"><span>Партнерство<small>посольство, організація, спікер</small></span></label>
+          </fieldset>
+
+          <div class="row">
+            <div class="f"><label for="fName">Ім’я та прізвище</label><input id="fName" name="name" autocomplete="name" required><div class="err">Вкажи ім’я, щоб ми знали, як звертатися.</div></div>
+            <div class="f"><label for="fContact">Як із тобою зв’язатися</label>
+              <div class="contact">
+                <select name="channel" id="fChannel" aria-label="Канал зв’язку"><option>Telegram</option><option>Instagram</option><option>Email</option></select>
+                <input id="fContact" name="contact" required placeholder="@нікнейм">
+              </div>
+              <div class="err">Залиш нікнейм або пошту, інакше ми не зможемо відповісти.</div>
+            </div>
+          </div>
+
+          <div data-for="event team">
+            <div class="row">
+              <div class="f"><label for="fUni">Університет і спеціальність</label><input id="fUni" name="uni" placeholder="КНУ, міжнародні відносини"></div>
+              <div class="f"><label for="fYear">Курс</label><select id="fYear" name="year"><option value="">Обери</option><option>1 курс</option><option>2 курс</option><option>3 курс</option><option>4 курс</option><option>Магістратура</option><option>Аспірантура</option><option>Школяр / ліцеїст</option><option>Уже закінчив(-ла)</option></select></div>
+            </div>
+          </div>
+
+          <div data-for="event">
+            <div class="f"><label for="fEvent">Що цікавить</label><select id="fEvent" name="event"></select></div>
+          </div>
+
+          <div data-for="team">
+            <div class="f"><label for="fRole">Чим хочеш займатися</label><select id="fRole" name="role"><option>Організація подій</option><option>Комунікації та соцмережі</option><option>Робота з партнерами й посольствами</option><option>Дизайн, фото, відео</option><option>Наукова редактура та збірники</option><option>Ще не знаю, порадьте</option></select></div>
+          </div>
+
+          <div data-for="partner">
+            <div class="row">
+              <div class="f"><label for="fOrg">Організація</label><input id="fOrg" name="org" placeholder="Посольство, ГО, університет"></div>
+              <div class="f"><label for="fPos">Посада <span class="opt">(необов’язково)</span></label><input id="fPos" name="position"></div>
+            </div>
+          </div>
+
+          <div class="f"><label for="fMsg"><span id="msgLabel">Кілька слів про себе</span> <span class="opt">(необов’язково)</span></label><textarea id="fMsg" name="message" maxlength="1500"></textarea><div class="hint" id="msgHint">Що вивчаєш, що цікавить, про що хотів би запитати посла.</div></div>
+
+          <label class="hp" aria-hidden="true">Не заповнюй це поле<input name="website" tabindex="-1" autocomplete="off"></label>
+          <label class="agree"><input type="checkbox" name="agree" id="fAgree" required><span>Погоджуюся, що команда Path of Science використає ці дані, щоб відповісти на заявку. Ми не передаємо їх третім особам, окрім списку гостей для посольства, якщо ти йдеш на лекцію.</span></label>
+          <div class="f" id="agreeErr" style="margin-top:-12px"><div class="err">Без згоди ми не маємо права зберегти заявку.</div></div>
+
+          <div class="form-foot">
+            <button class="btn btn-navy" type="submit" id="submitBtn">Надіслати заявку</button>
+            <small id="formStatus" role="status"></small>
+          </div>
+        </form>
+
+        <div class="result" id="result" tabindex="-1"></div>
+      </div>
+
+      <aside class="side">
+        <div class="side-card">
+          <h3>Що буде далі</h3>
+          <ol><li>Заявка потрапляє до координатора.</li><li>Протягом двох робочих днів ми пишемо тобі.</li><li>Додаємо в список на подію або запрошуємо на знайомство з командою.</li></ol>
         </div>
-      </div>
-      <div class="orbit reveal">
-        <div class="ring r1"><i class="dot"></i></div>
-        <div class="ring r2"><i class="dot"></i></div>
-        <div class="ring r3"></div>
-        <div class="core"><div><b class="grad">PoS</b><small>since day one</small></div></div>
-        <div class="tag-float tf1"><span>●</span> Дослідження</div>
-        <div class="tag-float tf2"><span>●</span> Менторство</div>
-        <div class="tag-float tf3"><span>●</span> Політика</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
-
-  <div class="section">
-    <div class="container">
-      <div class="stats reveal" id="stats"></div>
-    </div>
-  </div>
-
-  <div class="section" style="padding-top:0">
-    <div class="container split">
-      <div class="reveal">
-        <span class="kicker">Хто ми</span>
-        <h2>Шлях від аудиторії <span class="grad">до впливу</span></h2>
-        <p>Ми — команда студентів і молодих науковців, переконаних: якісна державна політика починається з людей, які вміють мислити науково.</p>
-        <p>Тому ми створюємо середовище, де молодь вчиться досліджувати, дискутувати — і впливати.</p>
-        <a class="btn btn-ghost" href="#/about" style="margin-top:14px">Детальніше про нас <span class="arr">→</span></a>
-      </div>
-      <div class="quote reveal">
-        <p>Наука — це шлях, а не привілей обраних.</p>
-        <small>Path of Science</small>
-      </div>
-    </div>
-  </div>
-
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head reveal">
-        <div><span class="kicker">Напрями</span><h2>Шість напрямів <span class="grad">однієї екосистеми</span></h2></div>
-        <p>Кожен напрям — окремий трек розвитку. Обери свій або поєднуй кілька.</p>
-      </div>
-      <div class="grid-3" id="homeDirections"></div>
-    </div>
-  </div>
-
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head reveal">
-        <div><span class="kicker">Шлях учасника</span><h2>Від першого кроку <span class="grad">до результату</span></h2></div>
-      </div>
-      <div class="steps" id="steps"></div>
-    </div>
-  </div>
-
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head reveal">
-        <div><span class="kicker">Події</span><h2>Найближчі <span class="grad">події</span></h2></div>
-        <a class="btn btn-ghost" href="#/events">Усі події <span class="arr">→</span></a>
-      </div>
-      <div class="grid-3" id="homeEvents"></div>
-    </div>
-  </div>
-
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="cta reveal">
-        <span class="kicker">Доєднуйся</span>
-        <h2>Твій шлях у науці <span class="grad">починається тут</span></h2>
-        <p>Заповни коротку заявку — і ми напишемо тобі в Instagram.</p>
-        <a class="btn btn-gold" href="#/join">Подати заявку <span class="arr">→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ПРО НАС ============ -->
-<section class="page" data-page="about">
-  <div class="page-hero">
-    <div class="orb o1"></div>
-    <div class="container">
-      <span class="kicker reveal">Про нас</span>
-      <h1 class="reveal">Ми будуємо середовище, де <span class="grad">студент стає дослідником</span></h1>
-      <p class="lead reveal">Path of Science — освітня спільнота, де молодь вчиться ставити питання, працювати з джерелами, писати академічні тексти та презентувати результати.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container">
-      <div class="grid-3" id="values"></div>
-    </div>
-  </div>
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head reveal">
-        <div><span class="kicker">Команда</span><h2>Люди, які <span class="grad">роблять це можливим</span></h2></div>
-        <p>Розділ буде заповнено після погодження з командою.</p>
-      </div>
-      <div class="grid-3" id="team"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ НАПРЯМИ ============ -->
-<section class="page" data-page="directions">
-  <div class="page-hero">
-    <div class="orb o1"></div>
-    <div class="container">
-      <span class="kicker reveal">Напрями</span>
-      <h1 class="reveal">Повний цикл <span class="grad">молодого дослідника</span></h1>
-      <p class="lead reveal">Від першої тези до публічного виступу — кожен напрям дає конкретні навички й результат.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container"><div class="grid-2" id="allDirections"></div></div>
-  </div>
-</section>
-
-<!-- ============ ПОДІЇ ============ -->
-<section class="page" data-page="events">
-  <div class="page-hero">
-    <div class="orb o1"></div>
-    <div class="container">
-      <span class="kicker reveal">Події</span>
-      <h1 class="reveal">Конференції, школи <span class="grad">і зустрічі</span></h1>
-      <p class="lead reveal">Анонси з’являються тут і в нашому Instagram.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container">
-      <div class="tabs" id="tabs"></div>
-      <div class="grid-3" id="allEvents"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ МЕНТОРСТВО ============ -->
-<section class="page" data-page="mentorship">
-  <div class="page-hero">
-    <div class="orb o1"></div>
-    <div class="container">
-      <span class="kicker reveal">Менторство</span>
-      <h1 class="reveal">Ментори <span class="grad">Path of Science</span></h1>
-      <p class="lead reveal">Практики, які допомагають учасникам будувати шлях у науці та публічному секторі.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container">
-      <div class="steps" id="mentorSteps" style="grid-template-columns:repeat(3,1fr)"></div>
-    </div>
-  </div>
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head reveal"><div><span class="kicker">Ментори</span><h2>Наші <span class="grad">ментори</span></h2></div></div>
-      <div class="grid-3" id="mentors"></div>
-    </div>
-  </div>
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-head reveal"><div><span class="kicker">FAQ</span><h2>Часті <span class="grad">питання</span></h2></div></div>
-      <div class="faq" id="faq"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ НОВИНИ ============ -->
-<section class="page" data-page="news">
-  <div class="page-hero">
-    <div class="orb o1"></div>
-    <div class="container">
-      <span class="kicker reveal">Новини</span>
-      <h1 class="reveal">Що відбувається <span class="grad">в спільноті</span></h1>
-      <p class="lead reveal">Звіти з подій, анонси та історії учасників.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container"><div class="grid-3" id="news"></div></div>
-  </div>
-</section>
-
-<!-- ============ ДОЄДНАТИСЯ ============ -->
-<section class="page" data-page="join">
-  <div class="page-hero">
-    <div class="orb o1"></div>
-    <div class="container">
-      <span class="kicker reveal">Доєднатися</span>
-      <h1 class="reveal">Стань частиною <span class="grad">Path of Science</span></h1>
-      <p class="lead reveal">Заповни форму. Ми скопіюємо твою заявку — залишиться лише надіслати її нам в Instagram.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container split" style="align-items:start">
-      <form class="card form reveal" id="joinForm">
-        <div class="field"><label>Ім’я та прізвище</label><input name="name" required placeholder="Олена Коваленко"></div>
-        <div class="field"><label>Університет / спеціальність</label><input name="uni" required placeholder="КНУ, політологія"></div>
-        <div class="field"><label>Напрям</label><select name="dir" id="dirSelect"></select></div>
-        <div class="field"><label>Чому хочеш доєднатися?</label><textarea name="why" placeholder="Кілька речень про себе і свою мету"></textarea></div>
-        <button class="btn btn-gold" type="submit">Скопіювати заявку і відкрити Instagram <span class="arr">→</span></button>
-        <div class="form-note" id="formNote"></div>
-      </form>
-      <div class="reveal">
-        <div class="quote" style="margin-bottom:22px"><p>Перший крок — найважливіший. Далі ми поруч.</p><small>Path of Science</small></div>
-        <div class="card">
-          <h3 style="margin-top:0">Як це працює</h3>
-          <ul>
-            <li>Заповнюєш форму зліва</li>
-            <li>Текст заявки копіюється автоматично</li>
-            <li>Вставляєш його в Direct нашого Instagram</li>
-            <li>Ми відповідаємо і підбираємо напрям</li>
-          </ul>
+        <div class="side-card">
+          <h3>Простіше написати?</h3>
+          <p>Пиши в Direct <a href="https://ig.me/m/path_of_science" target="_blank" rel="noopener">@path_of_science</a>. Реєстрації на окремі події також є в нашому <a href="https://linktr.ee/science_woc" target="_blank" rel="noopener">Linktree</a>.</p>
         </div>
-      </div>
+      </aside>
     </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>Часті питання</h2></div>
+    <div class="faq" id="faqList"></div>
   </div>
 </section>
 
 </main>
 
-<!-- ============ ФУТЕР ============ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
+<footer class="foot on-navy">
+  <div class="wrap">
+    <div class="foot-grid">
       <div>
-        <a class="logo" href="#/home"><span class="logo-mark">PoS</span>PATH OF SCIENCE</a>
-        <p style="color:var(--muted);margin-top:18px;max-width:340px;font-size:15px">Громадська організація, що об’єднує студентів і молодих науковців.</p>
+        <a class="logo" href="#top" style="color:#fff"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="#C8A353" stroke-width="3"/><circle cx="32" cy="32" r="17" fill="none" stroke="#C8A353" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="32" cy="6" r="5" fill="#C8A353"/></svg>Path of Science</a>
+        <p style="margin-top:14px;max-width:360px;font-size:15.5px">Молодіжна наукова спільнота. Проєкт ГО «Ініціативна група «Вітер змін»». Київ, Україна.</p>
       </div>
       <div>
-        <h5>Розділи</h5>
-        <div class="footer-links">
-          <a href="#/about">Про нас</a><a href="#/directions">Напрями</a><a href="#/events">Події</a>
-          <a href="#/mentorship">Менторство</a><a href="#/news">Новини</a>
-        </div>
+        <h3>На сайті</h3>
+        <ul><li><a href="#embassy">Посольські лекції</a></li><li><a href="#events">Події</a></li><li><a href="#formats">Що ми робимо</a></li><li><a href="#about">Про нас</a></li><li><a href="#apply">Подати заявку</a></li></ul>
       </div>
       <div>
-        <h5>Контакти</h5>
-        <div class="footer-links">
-          <a href="https://www.instagram.com/path_of_science" target="_blank" rel="noopener">Instagram — @path_of_science</a>
-          <span>Київ, Україна</span>
-        </div>
+        <h3>Контакти</h3>
+        <ul><li><a href="https://www.instagram.com/path_of_science/" target="_blank" rel="noopener">Instagram: @path_of_science</a></li><li><a href="https://linktr.ee/science_woc" target="_blank" rel="noopener">Linktree з реєстраціями</a></li><li><a href="https://ig.me/m/path_of_science" target="_blank" rel="noopener">Написати в Direct</a></li></ul>
       </div>
     </div>
-    <div class="footer-word">PATH OF SCIENCE</div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Path of Science. Усі права захищено.</span>
-      <span>Наука · Політика · Вплив</span>
-    </div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Path of Science</span><span>Наука, дипломатія, публічна політика</span></div>
   </div>
 </footer>
 
+<div class="mobile-cta on-navy"><a class="btn btn-foil" href="#apply">Подати заявку</a></div>
+
 <script>
-/* =====================================================
-   ДАНІ САЙТУ — ТУТ МІНЯЄШ ТЕКСТИ, ПОДІЇ, МЕНТОРІВ
-   value: null  →  показує «—» (впиши реальне число, коли буде)
-   ===================================================== */
+/* =====================================================================
+   ДАНІ САЙТУ. Усе, що змінюється, редагується тільки тут.
+   ===================================================================== */
 const DATA = {
-  instagram: "https://www.instagram.com/path_of_science",
-  marquee: ["Дослідження", "Менторство", "Конференції", "Публічна політика", "Академічне письмо", "Дипломатія"],
-  stats: [
-    { value: null, suffix: "+", label: "учасників спільноти" },
-    { value: 6,    suffix: "",  label: "напрямів роботи" },
-    { value: null, suffix: "+", label: "проведених подій" },
-    { value: null, suffix: "",  label: "партнерів і колаборацій" }
+  ig: "https://www.instagram.com/path_of_science/",
+  dm: "https://ig.me/m/path_of_science",
+
+  /* Куди летять заявки. Встав сюди адресу веб-застосунку Google Apps Script
+     (інструкція у файлі apps-script/README.md). Поки порожньо, форма працює
+     в запасному режимі: готує текст заявки і відкриває Direct в Instagram. */
+  formEndpoint: "",
+
+  /* Посольські лекції. done:true + назва = штамп стоїть. Решта — план. */
+  embassy: [
+    { when: "Листопад 2026", date: "03.11.2026", done: true, country: "Австрія", who: "Посол Роберт Мюллер", post: "reel/DfRw-xyt7_j" },
+    { when: "Січень 2027" }, { when: "Березень 2027" }, { when: "Травень 2027" }, { when: "Липень 2027" }, { when: "Вересень 2027" }
   ],
-  directions: [
-    { id: "conf",   icon: "◎", title: "Наукові конференції", text: "Майданчики, де студенти вперше презентують власні дослідження перед аудиторією.", points: ["Підготовка тез і доповіді", "Публічний виступ", "Фідбек від експертів"] },
-    { id: "school", icon: "◈", title: "Дослідницькі школи", text: "Інтенсивні програми з методології: від постановки питання до висновків.", points: ["Методи дослідження", "Робота з джерелами", "Міні-проєкт"] },
-    { id: "mentor", icon: "✦", title: "Менторство", text: "Кожен учасник працює над власним проєктом із підтримкою ментора.", points: ["Особистий ментор", "Регулярні зустрічі", "Супровід до результату"] },
-    { id: "policy", icon: "⬡", title: "Публічна політика", text: "Як наукові дані перетворюються на рішення для держави й громад.", points: ["Аналітичні записки", "Policy-дискусії", "Зустрічі з практиками"] },
-    { id: "write",  icon: "✎", title: "Академічне письмо", text: "Пишемо статті, есе та тези за міжнародними стандартами.", points: ["Структура тексту", "Цитування", "Редагування"] },
-    { id: "diplo",  icon: "◐", title: "Дипломатичні зустрічі", text: "Діалоги з представниками дипломатичних та міжнародних інституцій.", points: ["Відкриті розмови", "Міжнародний контекст", "Нетворкінг"] }
-  ],
-  steps: [
-    { title: "Заявка", text: "Розкажи про себе й свою мету — це займе 2 хвилини." },
-    { title: "Напрям", text: "Обираєш трек, який тобі найближчий." },
-    { title: "Практика", text: "Школи, конференції, робота з ментором." },
-    { title: "Результат", text: "Власне дослідження, виступ або публікація." }
-  ],
+
+  /* Події. Нову подію додавай зверху. stamp — короткий підпис для штампа в шапці (показуються 4 найсвіжіші з цим полем).
+     kind: conf | dip | lec | course. date у форматі РРРР-ММ-ДД (для сортування), show — як показати. */
   events: [
-    { cat: "conf",   type: "Конференція", date: "Дата уточнюється", title: "Назва події", text: "Опис події з’явиться згодом.", place: "Київ" },
-    { cat: "school", type: "Школа",       date: "Дата уточнюється", title: "Назва події", text: "Опис події з’явиться згодом.", place: "Онлайн" },
-    { cat: "diplo",  type: "Зустріч",     date: "Дата уточнюється", title: "Назва події", text: "Опис події з’явиться згодом.", place: "Київ" },
-    { cat: "policy", type: "Дискусія",    date: "Дата уточнюється", title: "Назва події", text: "Опис події з’явиться згодом.", place: "Київ" }
+    { date:"2026-11-03", show:"3 листопада 2026", kind:"dip", stamp:"Посольство Австрії", title:"Зустріч із Послом Австрії в Україні Робертом Мюллером", text:"Говорили про українсько-австрійські відносини, дипломатію, безпеку та про те, як молоді будувати кар’єру в дипломатії.", post:"reel/DfRw-xyt7_j" },
+    { date:"2026-07-15", show:"15 липня 2026", kind:"lec", title:"Вебінар «Міжкультурні компетенції: кому й навіщо вони потрібні»", text:"Спікерка — Вікторія Спащенко, тренерка з міжкультурної взаємодії. Онлайн, Zoom.", post:"p/DaYkf-NstDl" },
+    { date:"2026-05-13", show:"13 травня 2026", kind:"lec", stamp:"Чи ефективна ООН?", title:"Панельна дискусія «Чи ефективна ООН сьогодні?»", text:"Разом з UDP у Червоному корпусі КНУ: історія, сучасний стан і перспективи ООН.", post:"p/DYSYpFfswG3" },
+    { date:"2026-04-18", show:"18 квітня 2026", kind:"conf", title:"ІІІ Міжнародна наукова конференція «Україна та США: досвід і перспективи співпраці»", text:"Онлайн, з українськими та закордонними дослідниками.", post:"p/DVwWzRijN6x" },
+    { date:"2026-03-15", show:"Березень 2026", kind:"course", title:"Інтенсив з адвокації для молоді Ужгорода", text:"Один день про те, як молодь може впливати на рішення у своєму місті.", post:"p/DV3ohtrDOhY" },
+    { date:"2026-02-07", show:"7–8 лютого 2026", kind:"course", stamp:"Курс молодого політика", title:"«Курс молодого політика»", text:"Два дні офлайн у Києві: як працює держава зсередини та Україна на світовій арені. За підтримки проєкту Youth Connect for Ukraine.", post:"p/DUim9LXjDyq" },
+    { date:"2026-01-30", show:"30 січня 2026", kind:"lec", title:"Презентація звіту «The Values Index» від Snake Island Institute", text:"Про адвокацію інтересів України у США та стажування для молоді. КНУ імені Тараса Шевченка.", post:"p/DUsq-qFDDBM" },
+    { date:"2026-01-20", show:"Зима 2026", kind:"dip", title:"«The World Letter»: зустріч із французькою художницею Cocovan", text:"Авторка міжнародного мистецького проєкту в КНУ.", post:"p/DUQxqxxDDtg" },
+    { date:"2025-12-19", show:"19–20 грудня 2025", kind:"conf", stamp:"Кнорозов IV", title:"IV Міжнародна конференція пам’яті Юрія Кнорозова", text:"«Україна – Латинська Америка: геополітичні трансформації та нові форми взаємодії».", post:"reel/DShNUWQjKM-" },
+    { date:"2025-12-01", show:"1 грудня 2025", kind:"dip", title:"Телеміст UA–EC: студенти України та Еквадору", text:"Відкрита розмова між студентами двох країн. Київська локація — Головний корпус КНУ.", post:"p/DRmolF_DLIo" },
+    { date:"2025-10-09", show:"9 жовтня 2025", kind:"lec", title:"Відкрита лекція Фабріціо Віторіно про зовнішню політику Бразилії", text:"Бразильський журналіст і медіадослідник у Науковій бібліотеці імені Максимовича.", post:"p/DP03MdejCFL" },
+    { date:"2025-05-09", show:"9 травня 2025", kind:"conf", title:"Міжнародна конференція «Друга світова війна: історія та виклики сьогодення»", text:"До 80-річчя завершення війни. Очно в УжНУ та онлайн.", post:"reel/DJybop6to8C" },
+    { date:"2025-04-03", show:"3 квітня 2025", kind:"conf", title:"ІІ Міжнародна науково-практична конференція «Спорт: історія та сучасність»", text:"КНУ імені Тараса Шевченка.", post:"p/DIHlPv3NhAM" },
+    { date:"2025-03-15", show:"Березень 2025", kind:"lec", title:"Дискусія «Інструменти формування іміджу України в іншомовних аудиторіях»", text:"З командою іспанської редакції UATV Español.", post:"p/DHS66JeNGga" },
+    { date:"2024-12-13", show:"13–14 грудня 2024", kind:"conf", title:"III Міжнародна конференція пам’яті Юрія Кнорозова", text:"«Публічна дипломатія на шляху до взаєморозуміння». На відкритті виступив Посол Мексики в Україні.", post:"p/DDohbpqt_s8" },
+    { date:"2024-05-11", show:"11 травня 2024", kind:"conf", title:"Конференція «Студентське самоврядування — шлях змінотворців у відбудові України»", text:"За підсумками вийшов друком збірник матеріалів.", post:"p/C6zEHcdNo-N" },
+    { date:"2024-03-15", show:"15 березня 2024", kind:"conf", title:"ІІ Міжнародна наукова конференція «The long XIX century of Ukrainian history»", text:"До 190-річчя КНУ. Понад 30 учасників з різних міст України та з-за кордону.", post:"reel/C4nKbC-tv9Z" },
+    { date:"2023-11-24", show:"24–25 листопада 2023", kind:"conf", title:"ІІ Міжнародна конференція «Україна – Латинська Америка: виклики та перспективи глобального партнерства»", text:"Понад 100 учасників з університетів України, ЄС і Латинської Америки.", post:"reel/C0G2GrXNM6K" },
+    { date:"2023-11-21", show:"21 листопада 2023", kind:"lec", title:"Зустріч із Владленом Мараєвим, співавтором «Історії Без Міфів»", text:"На подію зареєструвалися 106 студентів.", post:"p/C0LoVJKt5qd" },
+    { date:"2023-03-31", show:"31 березня 2023", kind:"conf", title:"Конференція «Відновлення України: історичний досвід та перспективи після Перемоги»", text:"До 75-річчя Плану Маршалла. Видано збірник матеріалів.", post:"p/CthQtzjtSlO" },
+    { date:"2023-02-20", show:"2023", kind:"conf", title:"Всеукраїнська конференція «The long XIX century of Ukrainian history (1772–1914)»", text:"", post:"p/CoiD1GLNB5U" },
+    { date:"2022-11-25", show:"25 листопада 2022", kind:"conf", title:"Міжнародна конференція «Україна – Латинська Америка: 30 років співпраці»", text:"До 100-річчя Юрія Кнорозова. Збірник тез з ISBN.", post:"p/CksOnqDNkum" },
+    { date:"2021-12-02", show:"2 грудня 2021", kind:"conf", title:"Міжнародна наукова конференція «Connecting Minds, Creating the Future»", text:"У межах участі в Expo 2020.", post:"reel/Cmjks3_JNBF" }
   ],
-  mentorSteps: [
-    { title: "Заявка",   text: "Розкажи про свій досвід і мету — напиши нам в Instagram." },
-    { title: "Підбір",   text: "Підберемо ментора з напряму, який тобі найближчий." },
-    { title: "Зустрічі", text: "Консультації, план розвитку і супровід до результату." }
+  kinds: { conf:"Конференція", dip:"Дипломатія", lec:"Лекція", course:"Курс" },
+  kindsPlural: { conf:"Конференції", dip:"Дипломатія", lec:"Лекції та дискусії", course:"Курси" },
+
+  formats: [
+    { icon:"M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6", title:"Міжнародні конференції", text:"Подаєш тези, виступаєш перед дослідниками з України та з-за кордону, отримуєш публікацію у збірнику.", ex:"<b>Приклад:</b> щорічна конференція пам’яті Юрія Кнорозова, уже чотири роки поспіль." },
+    { icon:"M3 21h18M5 21V8h14v13M9 21v-5h6v5M12 8V3M12 3l5 2-5 2", title:"Посольські лекції", text:"Раз на два місяці група студентів іде до посольства на лекцію посла та розмову без камер.", ex:"<b>Перша:</b> Посольство Австрії, листопад 2026." },
+    { icon:"M4 5h16v11H4zM8 20h8M12 16v4", title:"Відкриті лекції та дискусії", text:"Запрошуємо аналітиків, журналістів і дослідників до університету. Вхід вільний за реєстрацією.", ex:"<b>Приклад:</b> «Чи ефективна ООН сьогодні?», травень 2026." },
+    { icon:"M12 3l9 5-9 5-9-5 9-5zM6 11v5c2 2 10 2 12 0v-5", title:"Курси та інтенсиви", text:"Короткі практичні програми про те, як працює держава, адвокація та зовнішня політика.", ex:"<b>Приклад:</b> «Курс молодого політика», два дні в Києві." },
+    { icon:"M12 21a9 9 0 100-18 9 9 0 000 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18", title:"Міжнародні діалоги", text:"Телемости та спільні проєкти зі студентами інших країн, передусім Латинської Америки.", ex:"<b>Приклад:</b> телеміст Україна – Еквадор." },
+    { icon:"M5 4h11l3 3v13H5zM9 9h6M9 13h6M9 17h4", title:"Публікації", text:"Видаємо збірники матеріалів конференцій. Для багатьох учасників це перша наукова публікація.", ex:"<b>Приклад:</b> збірники тез з ISBN." }
   ],
-  mentors: [
-    { name: "Ім’я ментора", role: "Напрям буде додано", initials: "?" },
-    { name: "Ім’я ментора", role: "Напрям буде додано", initials: "?" },
-    { name: "Ім’я ментора", role: "Напрям буде додано", initials: "?" }
+
+  road: [
+    { t:"2021", b:"Перша міжнародна конференція", s:"«Connecting Minds, Creating the Future»." },
+    { t:"2022", b:"Початок кнорозовської серії", s:"Конференція «Україна – Латинська Америка» до 100-річчя вченого." },
+    { t:"2024", b:"Офіційний статус ГО", s:"«Ініціативна група «Вітер змін»» стає громадською організацією." },
+    { t:"2026", b:"Курс молодого політика", s:"Перша власна освітня програма за підтримки Youth Connect for Ukraine." },
+    { t:"Листопад 2026", b:"Перша посольська лекція", s:"Зустріч із Послом Австрії. Далі — раз на два місяці." }
   ],
+
+  /* Команда. Поки масив порожній, блок на сайті прихований. Приклад запису:
+     { name:"Ім’я Прізвище", role:"Координатор подій" } */
+  team: [],
+
+  partners: ["КНУ імені Тараса Шевченка","Рада молодих вчених історичного факультету КНУ","Рада зовнішньої політики «Українська призма»","Всеукраїнський молодіжний центр","Snake Island Institute","Youth Connect for Ukraine (British Council)","ГО «Науковці»","UDP","Gov4You","УжНУ","Наукове товариство ЛНУ імені Івана Франка"],
+
   faq: [
-    { q: "Хто може доєднатися?", a: "Студенти та молоді науковці, яким цікаві дослідження й публічна політика. Відповідь буде уточнено командою." },
-    { q: "Чи потрібен досвід у науці?", a: "Ні — ми якраз допомагаємо зробити перші кроки." },
-    { q: "Як подати заявку?", a: "Через сторінку «Доєднатися» або напряму в Instagram @path_of_science." }
-  ],
-  values: [
-    { icon: "◎", title: "Місія", text: "Зробити науку доступним шляхом для кожного молодого дослідника." },
-    { icon: "✦", title: "Підхід", text: "Практика замість теорії: школи, конференції, реальні дослідження." },
-    { icon: "⬡", title: "Спільнота", text: "Однодумці з різних університетів і спеціальностей." }
-  ],
-  team: [
-    { name: "Ім’я", role: "Роль у команді", initials: "?" },
-    { name: "Ім’я", role: "Роль у команді", initials: "?" },
-    { name: "Ім’я", role: "Роль у команді", initials: "?" }
-  ],
-  news: [
-    { date: "Скоро", tag: "Анонс",  title: "Тут з’являться новини Path of Science", text: "Звіти з подій і новини спільноти." },
-    { date: "Скоро", tag: "Події",  title: "Звіти з конференцій і шкіл", text: "Фото, підсумки та історії учасників." },
-    { date: "Скоро", tag: "Історії", title: "Історії наших учасників", text: "Як студенти робили перші кроки в науці." }
+    { q:"Хто може долучитися?", a:"Студенти будь-якого університету та спеціальності, аспіранти, а також старшокласники, яким цікаві історія, міжнародні відносини, політика чи право. На окремі події діє відбір, бо місця обмежені." },
+    { q:"Чи це платно?", a:"Ні. Участь у наших подіях безкоштовна." },
+    { q:"Я не з Києва. Чи є сенс подаватися?", a:"Так. Частина конференцій і лекцій проходить онлайн або у змішаному форматі, а деякі події ми проводимо в інших містах, наприклад в Ужгороді." },
+    { q:"Як потрапити на лекцію до посольства?", a:"Залиш заявку з позначкою «Посольська лекція». Коли дата буде узгоджена, ми напишемо всім зі списку та проведемо короткий відбір. На вході потрібен паспорт або ID-картка." },
+    { q:"Чи потрібен науковий досвід, щоб виступити на конференції?", a:"Ні. Для багатьох учасників наша конференція стає першою. Вимоги до тез публікуємо разом з анонсом, а якщо щось незрозуміло, допоможемо." },
+    { q:"Чи дають сертифікати?", a:"Так, учасники конференцій і курсів отримують сертифікати, а тези конференцій виходять у збірнику." },
+    { q:"Ми організація і хочемо зробити спільну подію. Куди писати?", a:"Обери у формі «Партнерство» та коротко опиши ідею. Відповімо протягом двох робочих днів." }
   ]
 };
 
-/* ============ ДАЛІ — ЛОГІКА САЙТУ (можна не чіпати) ============ */
+/* ================= ЛОГІКА (нижче можна не чіпати) ================= */
 const $ = (s, r = document) => r.querySelector(s);
-const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const postUrl = p => p ? DATA.ig.replace(/\/$/, "") + "/" + p + "/" : DATA.ig;
+const years = n => { const a = n % 10, b = n % 100; return a === 1 && b !== 11 ? "рік" : a >= 2 && a <= 4 && (b < 12 || b > 14) ? "роки" : "років"; };
 
-const dirCard = (d, i, full) => `
-  <article class="card reveal">
-    <div class="icon">${d.icon}</div>
-    <span class="num">${String(i + 1).padStart(2, "0")}</span>
-    <h3>${d.title}</h3>
-    <p>${d.text}</p>
-    ${full ? `<ul>${d.points.map(p => `<li>${p}</li>`).join("")}</ul>` : `<a class="more" href="#/directions">Детальніше →</a>`}
-  </article>`;
+/* факти в герої — рахуються з даних */
+(() => {
+  const first = Math.min(...DATA.events.map(e => +e.date.slice(0, 4)));
+  const n = new Date().getFullYear() - first;
+  const confs = DATA.events.filter(e => e.kind === "conf").length;
+  $("#facts").innerHTML = [
+    [n + " " + years(n), "проводимо події, з " + first + "-го"],
+    [DATA.events.length + "+", "подій за цей час"],
+    [confs, "наукових конференцій"]
+  ].map(f => `<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join("");
+})();
 
-const stepCard = (s, i) => `
-  <div class="step reveal"><b>${String(i + 1).padStart(2, "0")}</b><h4>${s.title}</h4><p>${s.text}</p></div>`;
+/* штампи в «паспорті» — чотири найсвіжіші події */
+(() => {
+  const short = { dip:"Посольство", conf:"Конференція", lec:"Дискусія", course:"Курс" };
+  const label = e => e.stamp;
+  const picks = DATA.events.filter(e => e.stamp).slice(0, 4);   // поле stamp у події = штамп у «паспорті»
+  const rot = [-5, 4, 3, -3];
+  $("#passStamps").innerHTML = picks.map((e, i) => `
+    <a class="stamp ${i % 2 ? "red" : ""}" style="--rot:${rot[i]}deg;--i:${i}" href="${postUrl(e.post)}" target="_blank" rel="noopener">
+      <small>${short[e.kind]}</small><b>${esc(label(e))}</b><i>${e.date.split("-").reverse().join(".")}</i>
+    </a>`).join("");
+  $("#passNo").textContent = "№ " + String(DATA.events.length).padStart(3, "0");
+  requestAnimationFrame(() => document.body.classList.add("inked"));
+})();
 
-const eventCard = e => `
-  <article class="card reveal">
-    <div class="event-top"><span class="pill">${e.type}</span><span class="date">${e.date}</span></div>
-    <h3>${e.title}</h3><p>${e.text}</p>
-    <div class="meta">📍 ${e.place}</div>
-  </article>`;
+/* посольський сезон */
+$("#visa").innerHTML = DATA.embassy.map(s => s.done
+  ? `<div class="slot done"><a class="stamp red" style="--rot:-5deg" href="${postUrl(s.post)}" target="_blank" rel="noopener"><small>Відбулось</small><b>${esc(s.country)}</b><i>${s.date}</i></a></div>`
+  : `<div class="slot"><div><time>${s.when}</time>${s.country ? esc(s.country) : "посольство узгоджуємо"}</div></div>`).join("");
 
-const personCard = p => `
-  <article class="card mentor reveal"><div class="avatar">${p.initials}</div><h3 style="margin-top:0">${p.name}</h3><p>${p.role}</p></article>`;
-
-function render() {
-  const words = DATA.marquee.map((w, i) => `<span class="${i % 2 ? "g" : ""}">${w}</span><span>✦</span>`).join("");
-  $("#marquee").innerHTML = words + words;
-
-  $("#stats").innerHTML = DATA.stats.map(s => `
-    <div class="stat"><b ${s.value !== null ? `class="count" data-to="${s.value}" data-suffix="${s.suffix}"` : ""}>${s.value !== null ? "0" : "—"}</b><span>${s.label}</span></div>`).join("");
-
-  $("#homeDirections").innerHTML = DATA.directions.map((d, i) => dirCard(d, i, false)).join("");
-  $("#allDirections").innerHTML = DATA.directions.map((d, i) => dirCard(d, i, true)).join("");
-  $("#steps").innerHTML = DATA.steps.map(stepCard).join("");
-  $("#mentorSteps").innerHTML = DATA.mentorSteps.map(stepCard).join("");
-  $("#homeEvents").innerHTML = DATA.events.slice(0, 3).map(eventCard).join("");
-  $("#mentors").innerHTML = DATA.mentors.map(personCard).join("");
-  $("#team").innerHTML = DATA.team.map(personCard).join("");
-  $("#values").innerHTML = DATA.values.map(v => `
-    <article class="card reveal"><div class="icon">${v.icon}</div><h3 style="margin-top:0">${v.title}</h3><p>${v.text}</p></article>`).join("");
-  $("#faq").innerHTML = DATA.faq.map(f => `<details class="reveal"><summary>${f.q}</summary><p>${f.a}</p></details>`).join("");
-  $("#news").innerHTML = DATA.news.map(n => `
-    <article class="card reveal">
-      <div class="event-top"><span class="pill">${n.tag}</span><span class="date">${n.date}</span></div>
-      <h3>${n.title}</h3><p>${n.text}</p>
-    </article>`).join("");
-  $("#dirSelect").innerHTML = DATA.directions.map(d => `<option>${d.title}</option>`).join("");
-
-  // фільтр подій
-  const cats = [{ id: "all", title: "Усі" }].concat(DATA.directions.map(d => ({ id: d.id, title: d.title })));
-  $("#tabs").innerHTML = cats.map((c, i) => `<button class="tab ${i === 0 ? "active" : ""}" data-filter="${c.id}">${c.title}</button>`).join("");
-  showEvents("all");
-  $("#tabs").addEventListener("click", e => {
-    const b = e.target.closest(".tab");
-    if (!b) return;
-    $$(".tab").forEach(t => t.classList.toggle("active", t === b));
-    showEvents(b.dataset.filter);
+/* події */
+let evFilter = "all", evAll = false;
+function drawEvents() {
+  const counts = { all: DATA.events.length };
+  DATA.events.forEach(e => counts[e.kind] = (counts[e.kind] || 0) + 1);
+  $("#filters").innerHTML = [["all", "Усі"], ...Object.entries(DATA.kindsPlural)].map(([k, t]) =>
+    `<button class="chip" type="button" data-k="${k}" aria-pressed="${k === evFilter}">${t}<span>${counts[k] || 0}</span></button>`).join("");
+  let list = DATA.events.filter(e => evFilter === "all" || e.kind === evFilter).sort((a, b) => b.date.localeCompare(a.date));
+  const cut = +list[0]?.date.slice(0, 4) - 1;
+  const hidden = list.filter(e => +e.date.slice(0, 4) < cut).length;
+  if (!evAll) list = list.filter(e => +e.date.slice(0, 4) >= cut);
+  let html = "", y = "";
+  list.forEach(e => {
+    const yy = e.date.slice(0, 4);
+    if (yy !== y) { y = yy; html += `<h3 class="year">${y}</h3>`; }
+    html += `<article class="ev"><time datetime="${e.date}">${e.show}</time>
+      <div class="body"><h3>${esc(e.title)}</h3>${e.text ? `<p>${esc(e.text)}</p>` : ""}<a class="more" href="${postUrl(e.post)}" target="_blank" rel="noopener">Дивитися допис<span class="vh"> про подію «${esc(e.title)}»</span></a></div>
+      <span class="kind k-${e.kind}">${DATA.kinds[e.kind]}</span></article>`;
   });
+  $("#evList").innerHTML = html || `<p style="padding:30px 0;color:var(--muted)">У цій категорії подій ще не було. Стеж за анонсами в Instagram.</p>`;
+  const btn = $("#evMore");
+  btn.hidden = !hidden && !evAll;
+  btn.textContent = evAll ? "Згорнути" : `Показати ранні роки (ще ${hidden})`;
+}
+$("#filters").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) { evFilter = b.dataset.k; drawEvents(); } });
+$("#evMore").addEventListener("click", () => { evAll = !evAll; drawEvents(); });
+drawEvents();
+
+/* формати, шлях, партнери, команда, FAQ */
+$("#fmtGrid").innerHTML = DATA.formats.map(f => `<article class="fmt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${f.icon}"/></svg><h3>${f.title}</h3><p>${f.text}</p><p class="ex">${f.ex}</p></article>`).join("");
+$("#road").innerHTML = DATA.road.map(r => `<li><time>${r.t}</time><b>${r.b}</b><br><span style="color:var(--muted);font-size:15.5px">${r.s}</span></li>`).join("");
+$("#partners").innerHTML = DATA.partners.map(p => `<li>${esc(p)}</li>`).join("");
+if (DATA.team.length) {
+  $("#teamBox").hidden = false;
+  $("#team").innerHTML = DATA.team.map(p => `<div class="person"><i>${esc(p.name.split(" ").map(w => w[0]).join("").slice(0, 2))}</i><div><b>${esc(p.name)}</b><span>${esc(p.role)}</span></div></div>`).join("");
+}
+$("#faqList").innerHTML = DATA.faq.map(f => `<details><summary>${f.q}</summary><p>${f.a}</p></details>`).join("");
+$("#yr").textContent = new Date().getFullYear();
+
+/* меню */
+const burger = $("#burger");
+burger.addEventListener("click", () => burger.setAttribute("aria-expanded", document.body.classList.toggle("menu-open")));
+$("#nav").addEventListener("click", e => { if (e.target.tagName === "A") { document.body.classList.remove("menu-open"); burger.setAttribute("aria-expanded", "false"); } });
+const spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) $$("#nav a").forEach(a => a.setAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin: "-45% 0px -50% 0px" });
+$$("main section[id]").forEach(s => spy.observe(s));
+/* старі посилання виду #/join з попередньої версії сайту */
+(() => { const m = { join:"apply", events:"events", about:"about", directions:"formats", mentorship:"apply", news:"events", home:"top" }[location.hash.replace(/^#\//, "")]; if (location.hash.startsWith("#/") && m) location.replace("#" + m); })();
+
+/* ================= ФОРМА ЗАЯВКИ ================= */
+const form = $("#form"), box = $("#formBox"), statusEl = $("#formStatus");
+const DRAFT = "pos-application-draft";
+$("#fEvent").innerHTML = ["Посольська лекція (найближча)", "Наукова конференція", "Відкрита лекція або дискусія", "Курс чи інтенсив", "Усе, надсилайте анонси"].map(o => `<option>${o}</option>`).join("");
+
+const MODE = {
+  event:   { title:"Подія", label:"Кілька слів про себе", hint:"Що вивчаєш, що цікавить, про що хотів би запитати посла." },
+  team:    { title:"Команда", label:"Чому хочеш у команду", hint:"Досвід не обов’язковий. Розкажи, що вмієш і скільки часу готовий приділяти." },
+  partner: { title:"Партнерство", label:"Що пропонуєте", hint:"Формат, орієнтовні дати, кількість учасників. Можна англійською." }
+};
+function setMode(m) {
+  form.mode.value = m;
+  $$("[data-for]", form).forEach(el => { const on = el.dataset.for.split(" ").includes(m); el.hidden = !on; $$("input,select,textarea", el).forEach(i => i.disabled = !on); });
+  $("#msgLabel").textContent = MODE[m].label; $("#msgHint").textContent = MODE[m].hint;
+}
+form.addEventListener("change", e => { if (e.target.name === "mode") setMode(e.target.value); saveDraft(); });
+$("#fChannel").addEventListener("change", e => { const c = $("#fContact"); c.placeholder = e.target.value === "Email" ? "name@example.com" : "@нікнейм"; c.type = e.target.value === "Email" ? "email" : "text"; });
+/* кнопки на сторінці, що відкривають форму в потрібному режимі */
+document.addEventListener("click", e => { const a = e.target.closest("a[data-mode]"); if (!a) return; resetForm(false); setMode(a.dataset.mode); if (a.dataset.event) form.event.value = a.dataset.event; });
+
+function saveDraft() { try { const d = Object.fromEntries(new FormData(form)); delete d.website; d.mode = form.mode.value; localStorage.setItem(DRAFT, JSON.stringify(d)); } catch (e) {} }
+function loadDraft() { try { const d = JSON.parse(localStorage.getItem(DRAFT) || "null"); if (!d) return; setMode(d.mode || "event"); Object.entries(d).forEach(([k, v]) => { const el = form.elements[k]; if (el && k !== "mode" && k !== "agree" && el.type !== "radio") el.value = v; }); $("#fChannel").dispatchEvent(new Event("change")); } catch (e) {} }
+form.addEventListener("input", saveDraft);
+
+function validate() {
+  let first = null;
+  const check = (el, ok) => { const f = el.closest(".f"); f.classList.toggle("bad", !ok); el.setAttribute("aria-invalid", !ok); if (!ok && !first) first = el; };
+  check(form.name, form.name.value.trim().length > 1);
+  const c = form.contact.value.trim();
+  check(form.contact, form.channel.value === "Email" ? /^\S+@\S+\.\S+$/.test(c) : c.replace("@", "").length > 2);
+  $("#agreeErr").classList.toggle("bad", !form.agree.checked); if (!form.agree.checked && !first) first = form.agree;
+  if (first) first.focus();
+  return !first;
 }
 
-function showEvents(cat) {
-  const list = cat === "all" ? DATA.events : DATA.events.filter(e => e.cat === cat);
-  $("#allEvents").innerHTML = list.length
-    ? list.map(eventCard).join("")
-    : `<div class="card" style="grid-column:1/-1;text-align:center"><h3 style="margin-top:0">Поки що подій немає</h3><p>Стеж за анонсами в Instagram.</p></div>`;
-  observeAll();
-  $$("#allEvents .reveal").forEach(el => el.classList.add("visible"));
+function buildText(d, id) {
+  const L = [["Заявка", id + " · " + MODE[d.mode].title], ["Ім’я", d.name], [d.channel, d.contact], ["Університет", d.uni], ["Курс", d.year], ["Цікавить", d.event], ["Роль", d.role], ["Організація", d.org], ["Посада", d.position], ["Повідомлення", d.message]];
+  return "Привіт! Заявка з сайту Path of Science.\n" + L.filter(x => x[1]).map(x => x[0] + ": " + x[1]).join("\n");
 }
 
-/* поява при скролі */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
-  });
-}, { threshold: 0.12 });
-function observeAll() { $$(".reveal:not(.visible)").forEach(el => io.observe(el)); }
-
-/* лічильники */
-const countIO = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    const el = e.target, to = +el.dataset.to, suf = el.dataset.suffix || "";
-    let start = null;
-    const step = t => {
-      if (!start) start = t;
-      const p = Math.min((t - start) / 1600, 1);
-      el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))) + suf;
-      if (p < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-    countIO.unobserve(el);
-  });
-}, { threshold: 0.5 });
-
-/* навігація між сторінками */
-const titles = { home: "Path of Science — наукова спільнота молоді", about: "Про нас", directions: "Напрями", events: "Події", mentorship: "Менторство", news: "Новини", join: "Доєднатися" };
-function route() {
-  let name = location.hash.replace(/^#\/?/, "") || "home";
-  if (!$(`.page[data-page="${name}"]`)) name = "home";
-  $$(".page").forEach(p => p.classList.toggle("active", p.dataset.page === name));
-  $$("[data-link]").forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#/" + name));
-  document.body.classList.remove("menu-open");
-  document.title = name === "home" ? titles.home : titles[name] + " — Path of Science";
-  window.scrollTo(0, 0);
-  observeAll();
-}
-
-/* форма заявки */
-function copyText(t) {
-  const ta = document.createElement("textarea");
-  ta.value = t; document.body.appendChild(ta); ta.select();
-  try { document.execCommand("copy"); } catch (err) {}
-  ta.remove();
-}
-$("#joinForm").addEventListener("submit", e => {
+form.addEventListener("submit", async e => {
   e.preventDefault();
-  const f = new FormData(e.target);
-  const text = `Привіт! Хочу доєднатися до Path of Science.\nІм’я: ${f.get("name")}\nУніверситет: ${f.get("uni")}\nНапрям: ${f.get("dir")}\nЧому: ${f.get("why") || "—"}`;
-  copyText(text);
-  $("#formNote").textContent = "Заявку скопійовано! Встав її (Cmd+V) у Direct нашого Instagram.";
-  window.open(DATA.instagram, "_blank");
+  if (!validate()) { statusEl.textContent = "Перевір виділені поля."; return; }
+  const d = Object.fromEntries(new FormData(form));
+  if (d.website) return;                                   // бот заповнив приховане поле
+  delete d.website; delete d.agree;
+  const id = "PoS-" + Date.now().toString(36).toUpperCase().slice(-6);
+  Object.assign(d, { id, page: location.href, sentAt: new Date().toISOString() });
+  const text = buildText(d, id), btn = $("#submitBtn");
+
+  if (DATA.formEndpoint) {
+    btn.disabled = true; btn.textContent = "Надсилаємо…"; statusEl.textContent = "";
+    try {
+      const r = await fetch(DATA.formEndpoint, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(d) });
+      const j = await r.json(); if (!j.ok) throw new Error(j.error || "server");
+      return done("sent", id, d, text);
+    } catch (err) { /* сервер недоступний — показуємо запасний шлях, заявка не губиться */ }
+    finally { btn.disabled = false; btn.textContent = "Надіслати заявку"; }
+  }
+  done("manual", id, d, text);
 });
 
-/* ефекти */
-document.addEventListener("mousemove", e => {
-  const c = e.target.closest(".card");
-  if (!c) return;
-  const r = c.getBoundingClientRect();
-  c.style.setProperty("--x", (e.clientX - r.left) + "px");
-  c.style.setProperty("--y", (e.clientY - r.top) + "px");
+function done(kind, id, d, text) {
+  const res = $("#result");
+  if (kind === "sent") {
+    try { localStorage.removeItem(DRAFT); } catch (e) {}
+    res.innerHTML = `<span class="stamp"><small>Path of Science</small><b>Заявку прийнято</b><i>${id}</i></span>
+      <h3>Дякуємо, ${esc(d.name.split(" ")[0])}!</h3>
+      <p>Ми напишемо тобі в ${esc(d.channel)} (${esc(d.contact)}) протягом двох робочих днів. Номер заявки: ${id}.</p>
+      <div class="acts"><a class="btn btn-navy" href="${DATA.ig}" target="_blank" rel="noopener">Підписатися на анонси</a><button class="btn btn-out" type="button" data-again>Подати ще одну</button></div>`;
+  } else {
+    res.innerHTML = `<span class="stamp" style="--c:var(--blue)"><small>Залишився один крок</small><b>Надішли заявку нам</b><i>${id}</i></span>
+      <h3>Заявка готова</h3>
+      <p>Натисни кнопку нижче: текст скопіюється, і відкриється наш Direct. Залишиться вставити й надіслати.</p>
+      <pre id="appText">${esc(text)}</pre>
+      <div class="acts"><button class="btn btn-navy" type="button" data-send>Скопіювати та відкрити Direct</button><button class="btn btn-out" type="button" data-copy>Лише скопіювати</button></div>
+      <p style="margin-top:14px;font-size:14px" id="copyNote" role="status"></p>
+      <div class="acts"><button class="btn btn-sm" type="button" data-again style="color:var(--muted);text-decoration:underline">Повернутися до форми</button></div>`;
+  }
+  box.classList.add("sent"); res.focus({ preventScroll: true }); box.scrollIntoView({ block: "center" });
+}
+async function copy(t) { try { await navigator.clipboard.writeText(t); return true; } catch (e) { const a = document.createElement("textarea"); a.value = t; document.body.appendChild(a); a.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e2) {} a.remove(); return ok; } }
+$("#result").addEventListener("click", async e => {
+  const t = e.target.closest("button"); if (!t) return;
+  if (t.dataset.again !== undefined) return resetForm(t.closest(".result").querySelector("[data-send]") ? false : true);
+  const ok = await copy($("#appText").textContent);
+  $("#copyNote").textContent = ok ? "Скопійовано. Встав текст у повідомлення й надішли." : "Не вдалося скопіювати автоматично. Виділи текст вище та скопіюй вручну.";
+  if (t.dataset.send !== undefined) window.open(DATA.dm, "_blank", "noopener");
 });
-window.addEventListener("scroll", () => {
-  const h = document.documentElement;
-  $("#progress").style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight || 1)) * 100 + "%";
-  $("#header").classList.toggle("scrolled", h.scrollTop > 20);
-});
-$("#burger").addEventListener("click", () => document.body.classList.toggle("menu-open"));
+function resetForm(clear) { box.classList.remove("sent"); if (clear) { form.reset(); setMode("event"); } statusEl.textContent = ""; }
 
-/* старт */
-render();
-$$(".count").forEach(el => countIO.observe(el));
-$("#year").textContent = new Date().getFullYear();
-window.addEventListener("hashchange", route);
-route();
+setMode("event"); loadDraft();
 </script>
 </body>
 </html>
