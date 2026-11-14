@@ -1,26 +1,32 @@
 /**
  * Path of Science — приймач заявок із сайту.
- * Кожна заявка: рядок у Google Таблиці + сповіщення в Telegram.
+ * Кожна заявка: рядок у Google Таблиці + повідомлення в Telegram-групу.
  *
- * Налаштування (Параметри проєкту → Властивості скрипта):
- *   TG_TOKEN — токен бота від @BotFather
- *   TG_CHAT  — id чату або групи, куди слати сповіщення
- * Якщо властивостей немає, заявки просто пишуться в таблицю.
+ * Три рядки нижче — усе, що треба змінювати.
+ * У публічному репозиторії токен НЕ зберігається: справжній живе лише в проєкті Apps Script.
  */
-const COLS = ["sentAt", "id", "mode", "name", "channel", "contact", "uni", "year", "event", "role", "org", "position", "message", "page"];
-const HEAD = ["Час", "Номер", "Тип", "Ім’я", "Канал", "Контакт", "Університет", "Курс", "Цікавить", "Роль", "Організація", "Посада", "Повідомлення", "Сторінка", "Статус"];
+const TG_TOKEN = "ВСТАВ_ТОКЕН_БОТА";
+const TG_CHAT  = "ВСТАВ_ID_ГРУПИ";
+const SHEET_ID = "ВСТАВ_ID_ТАБЛИЦІ";
+
+const COLS = ["sentAt", "id", "mode", "name", "channel", "contact", "uni", "year", "event", "org", "position", "message", "page"];
+const HEAD = ["Час", "Номер", "Тип", "Ім’я", "Канал", "Контакт", "Університет", "Курс", "Цікавить", "Організація", "Посада", "Повідомлення", "Сторінка", "Статус"];
 const MODES = { event: "Подія", partner: "Співпраця" };
 
 function doPost(e) {
   try {
     const d = JSON.parse(e.postData.contents);
-    if (d.website) return out({ ok: true });                       // спам-бот
+    if (d.website) return out({ ok: true });                       // спам-бот заповнив приховане поле
     if (!d.name || !d.contact) return out({ ok: false, error: "empty" });
 
-    const clean = v => String(v == null ? "" : v).slice(0, 2000).replace(/^[=+\-@]/, "'$&"); // захист від формул
-    const sh = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
-    if (sh.getLastRow() === 0) { sh.appendRow(HEAD); sh.setFrozenRows(1); }
-    sh.appendRow(COLS.map(c => c === "mode" ? (MODES[d.mode] || d.mode) : clean(d[c])).concat(["Нова"]));
+    const lock = LockService.getScriptLock(); lock.waitLock(10000);
+    try {
+      const clean = v => String(v == null ? "" : v).slice(0, 2000).replace(/^[=+\-@]/, "'$&"); // захист від формул
+      const sh = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
+      if (sh.getLastRow() === 0) sh.appendRow(HEAD);
+      sh.setFrozenRows(1);
+      sh.appendRow(COLS.map(c => c === "mode" ? (MODES[d.mode] || d.mode) : clean(d[c])).concat(["Нова"]));
+    } finally { lock.releaseLock(); }
 
     notify(d);
     return out({ ok: true, id: d.id });
@@ -29,16 +35,20 @@ function doPost(e) {
   }
 }
 
+/* Відкрий адресу веб-застосунку в браузері: має показати {"ok":true,"alive":true} */
+function doGet() { return out({ ok: true, alive: true }); }
+
 function notify(d) {
-  const p = PropertiesService.getScriptProperties();
-  const token = p.getProperty("TG_TOKEN"), chat = p.getProperty("TG_CHAT");
-  if (!token || !chat) return;
-  const rows = [["Тип", MODES[d.mode]], ["Ім’я", d.name], [d.channel, d.contact], ["Університет", d.uni], ["Курс", d.year],
+  if (!TG_TOKEN || TG_TOKEN.indexOf("ВСТАВ") === 0) return;
+  const h = s => String(s || "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  const contact = d.channel === "Telegram" ? "@" + String(d.contact).replace(/^@|^https?:\/\/t\.me\//, "") : d.contact;
+  const rows = [["Тип", MODES[d.mode] || d.mode], ["Ім’я", d.name], [d.channel, contact], ["Університет", d.uni], ["Курс", d.year],
     ["Цікавить", d.event], ["Організація", d.org], ["Посада", d.position], ["Повідомлення", d.message]];
-  const text = "Нова заявка " + d.id + "\n\n" + rows.filter(r => r[1]).map(r => r[0] + ": " + r[1]).join("\n");
-  UrlFetchApp.fetch("https://api.telegram.org/bot" + token + "/sendMessage", {
+  const text = "<b>Нова заявка " + h(d.id) + "</b>\n\n" + rows.filter(r => r[1]).map(r => "<b>" + h(r[0]) + ":</b> " + h(r[1])).join("\n") +
+    '\n\n<a href="https://docs.google.com/spreadsheets/d/' + SHEET_ID + '">Відкрити таблицю заявок</a>';
+  UrlFetchApp.fetch("https://api.telegram.org/bot" + TG_TOKEN + "/sendMessage", {
     method: "post", muteHttpExceptions: true,
-    payload: { chat_id: chat, text: text.slice(0, 4000), disable_web_page_preview: "true" }
+    payload: { chat_id: TG_CHAT, text: text.slice(0, 4000), parse_mode: "HTML", disable_web_page_preview: "true" }
   });
 }
 
